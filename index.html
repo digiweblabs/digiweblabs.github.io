@@ -17,12 +17,6 @@ $(document).ready(function(){
 });
 </script>
 <script>
-
-var post = function() {
-alert('Thanks for contacting us! We will get back to you soon');
-}
-</script>
-<script>
 var m,x,y,z;
 function myfunction(){
 m=0;
@@ -349,7 +343,7 @@ We will get back to you soon</h2>
 </div>
 <div class="touchin2">
 <ul>
-<form action="https://script.google.com/macros/s/AKfycbykTLnyn0bV4vsV2C4rwgLpiOWWbDQNbdSaewoxBg/exec" class="gform" method="post" ng-app="myApp"  ng-controller="validateCtrl"name="myForm" onsubmit="post();return false;" novalidate>
+<form action="https://script.google.com/macros/s/AKfycbykTLnyn0bV4vsV2C4rwgLpiOWWbDQNbdSaewoxBg/exec" class="gform" method="post" ng-app="myApp"  ng-controller="validateCtrl" name="myForm" novalidate>
 
 <li class="fieldli"><p>
  <input type="text" name="name" ng-model="name" placeholder="Name" style="padding-left:14px" required>
@@ -397,7 +391,7 @@ We will get back to you soon</h2>
 </li>
 <li class="fieldli">
 <p>
-  <input type="submit" class="butn"ng-disabled="myForm.user.$dirty && myForm.user.$invalid || myForm.email.$dirty && myForm.email.$invalid"/>
+  <input type="submit"ng-disabled="myForm.user.$dirty && myForm.user.$invalid || myForm.email.$dirty && myForm.email.$invalid"/>
 </p>
 </li>
 
