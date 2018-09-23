@@ -299,7 +299,7 @@ textarea{
  
  .aboutdiv{
 width:100%;
-height:500px;
+height:600px;
 top:560px;
 position:relative;
 }
@@ -497,7 +497,7 @@ html {
  
  .aboutdiv{
 width:100%;
-height:1500px;
+height:1600px;
 top:1060px;
 position:relative;
 }
@@ -514,7 +514,7 @@ top:120px;
   }
   .copyright{
 	 position:relative;
-	 top:100px;
+	 top:1200px;
 	 background-color:black;
 	 height:100px;
 	 color:white;
