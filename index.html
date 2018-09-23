@@ -1,0 +1,474 @@
+<!doctype html>
+<html>
+<head>
+  <title>DigiWeb Labs</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <link rel="stylesheet" href="navig.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".icon").click(function(){
+        $(".vertical-menu").slideToggle("slow");
+    });
+
+});
+</script>
+<script>
+
+var post = function() {
+alert('Thanks for contacting us! We will get back to you soon');
+}
+</script>
+<script>
+var m,x,y,z;
+function myfunction(){
+m=0;
+setInterval(function() {
+if(m==0){
+x=document.getElementById("d1");
+x.style.display="block";
+y=document.getElementById("d2");
+y.style.display="none";
+z=document.getElementById("d3");
+z.style.display="none";
+m=1;
+}
+else if(m==1)
+{
+x=document.getElementById("d1");
+x.style.display="none";
+y=document.getElementById("d2");
+y.style.display="block";
+z=document.getElementById("d3");
+z.style.display="none";
+m=2;
+}
+else if(m==2){
+x=document.getElementById("d1");
+x.style.display="none";
+y=document.getElementById("d2");
+y.style.display="none";
+z=document.getElementById("d3");
+z.style.display="block";
+m=0;
+}
+},4000);
+}
+myfunction();// it will called once page loaded
+</script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+</head>
+<body>
+  <div class="topnav" id="mytopnav">
+    <a href="#logo" class="logo"><h3><span style="color:red">DiGi</span><span style="color:black">Web</span><span style="color:red"> LabS</span></h3></a>
+  <div class="topnav-right" id="mytopnav-right">
+      <a href="#home" class="home">Home</a>
+    <div class="div1"> <a href="" class="dropbtn">Services
+      <i class="fa fa-caret-down"></i>
+    </a>
+     <div class="div2">
+      <a href="#services"><img src="images\Website-Development.svg" width="28">  Website Developement</a>
+	  <a href="#services"><img src="images\Digital-Marketing.svg"width="28">  Digital Marketing</a>
+      <a href="#services"><img src="images\Branding.svg"width="28">  Branding</a>
+      <a href="#services"><img src="images\Brand-Strategy.svg"width="28">  Brand Consulting</a>
+      <a href="#services"><img src="images\UI-UX.svg"width="20" height="20">  UI/UX</a>
+      <a href="#services"><img src="images\Graphics-Design.svg"width="28">  Graphic Design</a>
+	  <a href="#services"><img src="images\Outdoor-Marketing.svg"width="28">Outdoor Marketing</a>
+	  <a href="#services"><i class="images\fa fa-calendar-check-o" style="font-size:20px;color:#ffcccc"></i> Event Management Service</a>
+	  <a href="#services"><img src="images\Website-Development.svg"width="25"> Training</a>
+      <a href="#services"><img src="images\Photography.svg"width="28"> Photography</a>
+
+     </div>
+    </div>
+      <a href="#meet">About Us</a>
+      
+  <a href="#Contact">Contact Us</a>
+  <a href="tel:+91-9056135266"><i class="fa fa-phone"></i> (91)-9056135266</a></div>
+<!--<a href="javascript:void(0);"target="_blank" class="icon" onclick="myfunction()"><i class="fa fa-bars" ></i></a>-->
+<a href="#"class="icon" onclick="myfunction()"><i class="fa fa-bars" ></i></a>
+  </div>
+  <!--vertical navigation bar-->
+  <div class="vertical-menu">
+      <a href="#home">Home</a>
+      <a href="#services" class="active">Services
+      <i class="fa fa-caret-down"></i></a>
+	  <a href="#services"><img src="Website-Development.svg" width="28">  Website Development</a>
+	  <a href="#services"><img src="Digital-Marketing.svg"width="28">  Digital Marketing</a>
+      <a href="#services"><img src="Branding.svg"width="28">  Branding</a>
+      <a href="#services"><img src="Brand-Strategy.svg"width="28">  Brand Consulting</a>
+      <a href="#services"><img src="UI-UX.svg"width="20" height="20">  UI/UX</a>
+      <a href="#services"><img src="Graphics-Design.svg"width="28">  Graphic Design</a>
+	  <a href="#services"><img src="Outdoor-Marketing.svg"width="28">Outdoor Marketing</a>
+	  <a href="#services"><i class="fa fa-calendar-check-o" style="font-size:20px;color:#ffcccc"></i> Event Management Service</a>
+	  <a href="#services"><img src="Website-Development.svg"width="25"> Training</a>
+      <a href="#services"><img src="Photography.svg"width="28"> Photography</a>
+      <a href="#about">About Us</a>
+      <a href="#Contact">Contact Us</a>
+	  <a href="tel:+91-9056135266"><i class="fa fa-phone"></i> (91)-9056135266</a>
+</div>
+  
+  <!-- service slider-->
+  
+ <div class="anim w3-content w3-section"style="max-width:100%;">
+ 
+ <div class="mySlides w3-animate-bottom" style="width:100%;">
+ <div style="width:50%;float:left;"class="dv"><img src="web-design.png" style="width:90%;height:400px;padding:70px;object-fit:cover"></div>
+  <div style="width:50%;float:left;text-align:left;padding:70px" class="dv1"><a href="#Website Development"style="text-decoration:none;"> <h1>Website Development</h1></a></br>Our website development team designs engaging and professional websites for small and large businesses that meet your specifications.
+  <div class="kontact"style="float:bottom">
+  <a href="#Contact" style="float:left">Contact Now</a>
+  <!-- <a href="#Know More" style="float:left">Know More</a>-->
+  </div>
+  </div>
+  </div>
+  <div class="mySlides w3-animate-top" style="width:100%">
+ <div style="width:50%;float:left;"class="dv"><img src="marketing-digiweb labs.png" style="width:90%;height:400px;padding:70px;object-fit:cover"></div>
+  <div style="width:50%;float:left;text-align:left;padding:70px;"class="dv1"><a href="#Digital Marketing"style="text-decoration:none"> <h1>Digital Marketing</h1></a></br>We make sure your brand message is one that will resonate with your target market across digital channels. What information are they looking for? What problem can you solve for them? And where do they want to find the solution?
+  <div class="kontact"style="float:bottom">
+  <a href="#Contact" style="float:left">Contact Now</a>
+  <!-- <a href="#Know More" style="float:left">Know More</a>-->
+  </div>
+  </div>
+  </div>
+  <div class="mySlides w3-animate-bottom" style="width:100%">
+ <div style="width:50%;float:left;"class="dv"><img src="branding.png" style="width:90%;height:400px;padding:70px;object-fit:cover"></div>
+  <div style="width:50%;float:left;text-align:left;padding:70px;"class="dv1"><a href="#services1"style="text-decoration:none"> <h1>Branding & Identity</h1></a></br>Our website development team designs engaging and professional websites for small and large businesses that meet your specifications.
+  <div class="kontact"style="float:bottom">
+  <a href="#Contact" style="float:left">Contact Now</a>
+  <!-- <a href="#Know More" style="float:left">Know More</a>-->
+  </div>
+  </div>
+  </div>
+  <div class="mySlides w3-animate-top" style="width:100%">
+ <div style="width:50%;float:left;"class="dv"><img src="web-design.png" style="width:90%;height:400px;padding:70px;object-fit:cover"></div>
+  <div style="width:50%;float:left;text-align:left;padding:70px;"class="dv1"><a href="#services1"style="text-decoration:none"> <h1>Event Management Service</h1></a></br>Our website development team designs engaging and professional websites for small and large businesses that meet your specifications.
+  <div class="kontact"style="float:bottom">
+  <a href="#Contact" style="float:left">Contact Now</a>
+  <!-- <a href="#Know More" style="float:left">Know More</a>-->
+  </div>
+  </div>
+  </div>
+  
+  <div class="mySlides w3-animate-top" style="width:100%">
+ <div style="width:50%;float:left;" class="dv"><img src="web-design.png" style="width:90%;height:400px;padding:70px;object-fit:cover"></div>
+  <div style="width:50%;float:left;text-align:left;padding:70px;" class="dv1"><a href="#services1"style="text-decoration:none"> <h1>Training</h1></a></br>Our website development team designs engaging and professional websites for small and large businesses that meet your specifications.
+  <div class="kontact"style="float:bottom">
+  <a href="#Contact" style="float:left">Contact Now</a>
+ <!-- <a href="#Know More" style="float:left">Know More</a>-->
+  </div>
+  </div>
+  </div>
+
+  </div>
+  <!--services description page-->
+  <div class="serviceDescription" id="services">
+   <div class="serviceDescriptionInside1"><h1 style="font-family:lato;font-size:54px;font-weight:800;font-style:normal">Services</h1>
+   </br><p style="font-family:lato;font-size:14px;font-weight:500;font-style:normal">Customers’ expectations only go up. And when it comes to digital, today’s WOW is tomorrow’s ordinary. That’s why we focus on the future and things that matter: customer needs, sound data, and engaging designs that produce results. At Digiweb LabS, we create digital products and experiences that meet great expectations.</p></div>
+   <div class="serviceDescriptionInside2">
+   <table>
+	<tr>
+	<td rowspan="2"><a href="#services1"><img src="Website-Development.svg" width="35"></a>
+	</td>
+	<td>
+	<a href="" style="color:#ffcccc;text-decoration:none"><b>Website Development</b></a>
+	</td>
+	</tr>
+	<tr>
+	<td style="font-family:lato;font-size:14px;font-weight:500;font-style:normal">
+	We create everything from single page static websites to complex e-commerce websites
+	</td>
+	</tr>
+	<tr>
+	<td rowspan="2"><a href="#services1"><img src="Branding.svg"width="35"></a>
+	</td>
+	<td>
+	<a href="" style="color:#ffcccc;text-decoration:none"><b>Branding & Corporate Identity</b></a>
+	</td>
+	</tr>
+	<tr>
+	<td style="font-family:lato;font-size:14px;font-weight:500;font-style:normal">
+	Whether it is market research, complete brand guideline, or just a logo, we do it all.
+	</td>
+	</tr>
+	<tr>
+	<td rowspan="2"><a href="#services1"><img src="Brand-Strategy.svg"width="35"></a>
+	</td>
+	<td>
+	<a href="" style="color:#ffcccc;text-decoration:none"><b>Brand Consulting</b></a>
+	</td>
+	</tr>
+	<tr>
+	<td style="font-family:lato;font-size:14px;font-weight:500;font-style:normal">
+	With the help of our proprietary frameworks, we help you in creating a successful brand.
+	</td>
+	</tr>
+	<tr>
+	<td rowspan="2"><a href="#services1"><img src="Graphics-Design.svg"width="35"></a>
+	</td>
+	<td>
+	<a href="" style="color:#ffcccc;text-decoration:none"><b>Graphic Design</b></a>
+	</td>
+	</tr>
+	<tr>
+	<td style="font-family:lato;font-size:14px;font-weight:500;font-style:normal">
+We help create engaging design collateral like flyers, brochures, posters and more
+	</td>
+	</tr>
+	<td rowspan="2"><a href="#services1"><img src="Website-Development.svg"width="35"></a>
+	</td>
+	<td>
+	<a href="" style="color:#ffcccc;text-decoration:none"><b>Training</b></a>
+	</td>
+	</tr>
+	<tr>
+	<td style="font-family:lato;font-size:14px;font-weight:500;font-style:normal">
+We help create engaging design collateral like flyers, brochures, posters and more
+	</td>
+	</tr>
+	</table>
+      </div>
+   <div class="serviceDescriptionInside3">
+    <table>
+	<tr>
+	<td rowspan="2"><a href="#services1"><img src="Digital-Marketing.svg"width="35"></a>
+	</td>
+	<td>
+	<a href="" style="color:#ffcccc;text-decoration:none"><b>Digital Marketing</b></a>
+	</td>
+	</tr>
+	<tr>
+	<td style="font-family:lato;font-size:14px;font-weight:500;font-style:normal">
+	We are big on content and have expertise in contemporary techniques like SEO/SMO etc
+	</td>
+	</tr>
+	<tr>
+	<td rowspan="2"> <a href="#services1"><img src="UI-UX.svg"width="35"></a>
+	</td>
+	<td>
+	<a href="" style="color:#ffcccc;text-decoration:none"><b>UI/UX</b></a>
+	</td>
+	</tr>
+	<tr>
+	<td style="font-family:lato;font-size:14px;font-weight:500;font-style:normal">
+	Whether it is market research, complete brand guideline, or just a logo, we do it all.
+	</td>
+	</tr>
+	<tr>
+	<td rowspan="2"><a href="#services1"><img src="Outdoor-Marketing.svg"width="35"></a>
+	</td>
+	<td>
+	<a href="" style="color:#ffcccc;text-decoration:none"><b>Outdoor Marketing</b></a>
+	</td>
+	</tr>
+	<tr>
+	<td style="font-family:lato;font-size:14px;font-weight:500;font-style:normal">
+    Present in 140 cities, we provide a plethora of media formats to advertise your brand
+	</td>
+	</tr>
+	<tr>
+	<td rowspan="2"><a href="#services1"><i class="fa fa-calendar-check-o" style="font-size:30px;color:#ffcccc"></i></a>
+	</td>
+	<td>
+	<a href="" style="color:#ffcccc;text-decoration:none;"><b>Event Management Service</b></a>
+	</td>
+	</tr>
+	<tr>
+	<td style="font-family:lato;font-size:14px;font-weight:500;font-style:normal">
+	Present in 140 cities, we provide a plethora of media formats to advertise your brand
+	</td>
+	</tr>
+	<td rowspan="2"><a href="#services1"><img src="Photography.svg"width="35"></a>
+	</td>
+	<td>
+	<a href="" style="color:#ffcccc;text-decoration:none"><b>Photography</b>
+	</td>
+	</tr>
+	<tr>
+	<td style="font-family:lato;font-size:14px;font-weight:500;font-style:normal">
+	We specialize in e-commerce, product, real estate and in-store photography
+	</td>
+	</tr>
+	</table>
+</div>
+  </div>
+  <!--- Testimonial-->
+  <div class="testyout">
+<h2 style="text-align:center;font-family:lato;font-size:54px;font-weight:800;font-style:normal;">Testimonials</h2>
+
+<div class="testy" id="d1"style="display:none">
+  <img src="YRYHY.jpg" alt="Avatar" style="width:120px">
+  <p><span style="font-family:lato;font-size:16px;font-weight:700;font-style:normal;">Hukmaram Bishnoi</span></br></br>CEO & Founder, Digiweb Labs.</p></br>
+  <p style="font-family:lato;font-size:16px;font-weight:500;font-style:normal;">Working with Hukmaram is a pleasure. He always goes the extra mile to deliver over and above the brief. The Digweb Labs team is responsive, reliable and proactive.</p>
+</div>
+
+<div class="testy" id="d2" style="display:none">
+  <img src="YRYHY.jpg" alt="Avatar" style="width:120px">
+  <p><span style="font-family:lato;font-size:16px;font-weight:700;font-style:normal;">Hukmaram</span></br></br>CEO & Founder, Digiweb Labs.</p></br>
+  <p style="font-family:lato;font-size:16px;font-weight:500;font-style:normal;">Working with Hukmaram is a pleasure. He always goes the extra mile to deliver over and above the brief. The Digweb Labs team is responsive, reliable and proactive.</p>
+</div>
+
+<div class="testy" id="d3" style="display:block">
+  <img src="YRYHY.jpg" alt="Avatar" style="width:120px">
+  <p><span style="font-family:lato;font-size:16px;font-weight:700;font-style:normal;">Bishnoi</span></br></br>CEO & Founder, Digiweb Labs.</p></br>
+  <p style="font-family:lato;font-size:16px;font-weight:500;font-style:normal;">Working with Hukmaram is a pleasure. He always goes the extra mile to deliver over and above the brief. The Digweb Labs team is responsive, reliable and proactive.</p>
+</div>
+</div>
+
+<!--Get in touch with-->
+<div class="touchout" id="Contact">
+<h1 style="text-align:center;font-family:lato;font-size:54px;font-weight:800;font-style:normal">Get in touch with us</h1>
+<p style="text-align:center">Have questions? Want to discuss a project? Drop your contact details and we'll get in touch</p>
+<div style="display:none;text-align:center" class="thanks">
+<h2 style="color:red">Thanks for contacting us!
+We will get back to you soon</h2>
+</div>
+<div class="touchin1">
+                 	<li>
+                      <i class="fa fa-map-marker" style="color:red;font-size:50px;"></i>
+                      <h6>ADDRESS</h6>
+                      <p>D-167, Ground Floor, <br>Sector 49, Noida - 201301, India<br></p>      
+                    </li>
+                    <li>
+                      <i class="fa fa-mobile" style="color:red;font-size:50px;"></i>
+                      <h6>PHONE</h6>
+                      <p>+91-9056135266</p>
+                      <p>&nbsp;</p>      
+                    </li>
+                    <li>
+                      <i class="fa fa-envelope-o" style="color:red;font-size:50px;"></i>
+                      <h6>EMAIL</h6>
+                      <p><a href="mailto:design@dgweblabs.in" style="text-decoration:none">design@dgweblabs.in</a></p>      
+                    </li>
+                 </ul>
+
+</div>
+<div class="touchin2">
+<ul>
+<form action="https://script.google.com/macros/s/AKfycbykTLnyn0bV4vsV2C4rwgLpiOWWbDQNbdSaewoxBg/exec" class="gform" method="post" ng-app="myApp"  ng-controller="validateCtrl"name="myForm" onsubmit="post();return false;" novalidate>
+
+<li class="fieldli"><p>
+ <input type="text" name="name" ng-model="name" placeholder="Name" style="padding-left:14px" required>
+  <span style="color:red" ng-show="myForm.name.$dirty && myForm.name.$invalid">
+  <span ng-show="myForm.name.$error.required">Username is required.</span>
+  </span>
+</p>
+</li>
+<li class="fieldli"><p>
+  <input type="email" name="email" ng-model="email" placeholder="Email" style="padding-left:14px"required>
+  <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+  <span ng-show="myForm.email.$error.required">Email is required.</span>
+  <span ng-show="myForm.email.$error.email">Invalid email address.</span>
+  </span>
+</p>
+</li>
+<li class="fieldli"><p>
+<select style="padding-left:14px;color:gray" name="service interested in">
+<option selected="true" disabled="disabled">Service interested in</option>
+<option value="Web Development">Web Development</option>
+<option value="Digital Marketing">Digital Marketing</option>
+<option value="Branding">Branding</option>
+<option value="Brand Consulting">Brand Consulting</option>
+<option value="UI/UX">UI/UX</option>
+<option value="Graphic Design">Graphic Design</option>
+<option value="Outdoor Marketing">Outdoor Marketing</option>
+<option value="Event Management Service">Event Management Service</option>
+<option value="Training">Training</option>
+<option value="Photography">Photography</option>
+</select>
+</p>
+</li>
+<li class="fieldli"><p>
+  <input type="number" name="phone" ng-model="phone" ng-minlength="10" ng-maxlength="12" placeholder="Phone" style="padding-left:14px"required>
+  <span style="color:red" ng-show="myForm.phone.$dirty && myForm.phone.$invalid">
+  <span ng-show="myForm.phone.$error.required">Number is required.</span>
+  <span ng-show="myForm.phone.$error.number">Invalid phone number.</span>
+  <span ng-show="myForm.phone.$error.minlength">Phone number is too short</span>
+  <span ng-show="myForm.phone.$error.maxlength">Phone number is too large</span>
+  </span>
+</p>
+</li>
+<li class="fieldli1"><p>
+<textarea placeholder="Message" style="padding-left:14px" name="message" required></textarea></p>
+</li>
+<li class="fieldli">
+<p>
+  <input type="submit" class="butn"ng-disabled="myForm.user.$dirty && myForm.user.$invalid || myForm.email.$dirty && myForm.email.$invalid" onClick="location.href='file:///C:/Users/Acer/Desktop/New%20folder%20(7)/navigation_bar.html'"/>
+</p>
+</li>
+
+</form>
+</ul>
+<script>
+var app = angular.module('myApp', []);
+app.controller('validateCtrl', function($scope) {
+    $scope.user = '';
+    $scope.email = '';
+});
+</script></div>
+</div>
+<div class="aboutdiv" id="meet">
+<h1 style="text-align:center;font-family:lato;font-size:54px;font-weight:800;font-style:normal">Meet Our Team</h1>
+  <div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="YRYHY.jpg" alt="Hukmaram Bishnoi" style="width:100%">
+      <div class="container">
+        <h2>Hukmaram Bishnoi</h2>
+        <p class="title">CEO & Founder</p>
+        <p>I love web-development.</p>
+        <p>design@dgweblabs.in</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="YRYHY.jpg" alt="Hukmaram Bishnoi" style="width:100%">
+      <div class="container">
+        <h2>Hukmaram Bishnoi</h2>
+        <p class="title">CEO & Founder</p>
+        <p>I love web-development.</p>
+        <p>design@dgweblabs.in</p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="YRYHY.jpg" alt="Hukmaram Bishnoi" style="width:100%;object-fit:cover">
+      <div class="container">
+        <h2>Hukmaram Bishnoi</h2>
+        <p class="title">CEO & Founder</p>
+        <p>I love web-development.</p>
+        <p>design@dgweblabs.in</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+<div class="copyright">All Right Reserved &copy; 2018 Digiweb Labs </div>
+
+<script>
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+
+    setTimeout(carousel, 6000);    
+}
+</script>
+</body>
+</html>
