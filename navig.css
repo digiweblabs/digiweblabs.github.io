@@ -504,6 +504,7 @@ position:absolute;
 top:370px;
 left:0;
 
+box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 }
   .copyright{
 	 position:relative;
