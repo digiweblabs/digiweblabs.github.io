@@ -483,7 +483,7 @@ html {
  
   .aboutdiv{
 width:100%;
-min-height:1150px;
+min-height:1100px;
 top:1060px;
 position:relative;
 }
@@ -499,7 +499,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .column2{
 width:100%;
-min-height:850px;
+min-height:800px;
 position:absolute;
 top:370px;
 left:0;
