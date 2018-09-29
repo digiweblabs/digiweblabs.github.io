@@ -120,26 +120,30 @@
 	color:red;
 }
 .anim{
-	background-color:#FFE6D0;
+	background-color:#00334d;
 	width:100%;
-	height:500px;
+	height:700px;
 	position:relative;
 	overflow: auto;
     z-index:1;
 	top: 45px;
-	border-top: 1px solid gray;
+	border: 1px solid white;
+	color:#c2d6d6;
+	border-radius:12px;
 	
 }
  .kontact a{
 	text-decoration:none;
 	padding:8px;
-	border:1px solid black;
+	border:1px solid #1a66ff;
 	border-radius: 50px;
-	margin:14px;	
+	margin:14px;
+    color:  #1a66ff;
+    background-color: #00334d;	
 }
 .kontact a:hover{
-	background-color:#FFEDD0;
-	border:1px solid #FFE6D0;
+	background-color: white;
+	border:1px solid #1a66ff;
 	border-radius: 70px;
 	
 }
@@ -147,56 +151,80 @@
 {
 	
 	width:100%;
-	height:500px;
+	height:750px;
 	position:relative;
-	margin-top:0px;
+	top:70px;
+	background-color:#00334d;
+	border: 1px solid white;
+	border-radius:12px;
+	
 }
 .serviceDescriptionInside1{
-	width: 33.33%;
+	width: 30%;
 	float: left;
 	background-color: white;
-	height: 500px;
+	height: 600px;
 	position: absolute;
     padding: 25px;
-	left:0%;
-	top:2%;
+	left:2%;
+	top:12%;
+	color:#669999;
+	border-radius:12px;
+	line-height:2;
+	font-family:Open Sans;
+	font-size:16px;
+	font-weight:500;
+	font-style:normal;
+	
 }
 .serviceDescriptionInside2{
-	width: 33.33%;
+	width: 30%;
 	float: left;
 	background-color: white;
-	height: 500px;
+	height: 600px;
 	position: absolute;
     padding: 25px;
-	left :33.33%;
-	top:2%;
+	left :34%;
+	top:12%;
+	color:#669999;
+	border-radius:12px;
+	font-family:Open Sans;font-size:16px;font-weight:500;font-style:normal;
 }
 .serviceDescriptionInside3{
-	width: 33.33%;
+	width: 30%;
 	float: left;
 	background-color: white;
-	height: 500px;
+	height: 600px;
 	position: absolute;
     padding: 20px;
-	left:66.66%;
-	top:2%;
+	left:66%;
+	top:12%;
+	border-radius:12px;
+	color:#669999;
+	font-family:Open Sans;font-size:16px;font-weight:500;font-style:normal;
 }
+
  table, th, td {
-    border-collapse: collapse;
+	border-collapse: collapse;
+	
+	 
+
 }
-th, td {
+ th, td {
     padding: 5px;
-    text-align: left;    
+    text-align: left;   
+	
 }
 
 .testyout{
-  border: 1px solid #ccc;
-  background-color: #eee;
-  border-radius: 5px;
+  background-color: #00334d;
   position:relative;
   width:100%;
-  top:200px;
+  top:100px;
   min-height:350px;
+  color:#c2d6d6;
+  border: 1px solid white;
+  border-radius:12px;
 }
 .testy {
   padding: 16px;
@@ -220,6 +248,10 @@ th, td {
   font-size: 20px;
   margin-right: 15px;
 }
+.pp1{font-family:Open Sans;font-size:16px;font-weight:500;font-style:normal;
+	  
+  }
+  .pp2{ font-family:Open Sans;font-size:18px;font-weight:400;font-style:normal;}
 h2{
 font-family:lato;
 font-size:54px;
@@ -230,9 +262,13 @@ font-style:normal;
 .touchout{
 	position:relative;
 	width:100%;
-	height:500px;
-	top:210px;
-	background-color: #eee;
+	height:860px;
+	top:130px;
+	background-color: #00334d;
+	color:#c2d6d6;
+	border: 1px solid white;
+    border-radius:12px;
+	font-family:Open Sans;font-size:16px;font-weight:500;font-style:normal;
 	
 }
 .touchin1{
@@ -242,7 +278,8 @@ font-style:normal;
 	top:150px;
 	list-style-type: none;
 	padding:14px 50px;
-	background-color: #eee;
+	background-color:#00334d;
+	
 	 
 	
 }
@@ -256,7 +293,7 @@ li {
 	height:450px;
 	top:400px;
 	padding:14px 20px;
-	background-color: #eee;
+	background-color:#00334d;
 	
 	
 }
@@ -291,11 +328,13 @@ textarea{
  input[type=submit]{
 	 width:20%;
 	 height:50px;
-	 border: 1px solid red;
+	 border: 1px solid #1a66ff;
 	 border-radius:50px;
-	 color:red;
+	 color:#00334d;
+	 background-color:white;
 	 
  }
+
 /* .social {
 	 
 	 position:relative;
@@ -362,8 +401,11 @@ textarea{
  .aboutdiv{
 width:100%;
 height:500px;
-top:560px;
+top:150px;
 position:relative;
+background-color:#00334d;
+border: 1px solid white;
+border-radius:12px;
 
 }
 .column1{
@@ -373,7 +415,7 @@ height:500px;
 position:absolute;
 top:70px;
 left:0;
-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+color:white;
 }
 .column2{
 width:50%;
@@ -381,8 +423,7 @@ height:500px;
 position:absolute;
 top:70px;
 left:50%;
-
-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+color:white;
 }
 html {
   box-sizing: border-box;
@@ -394,7 +435,7 @@ html {
 
  .copyright{
 	 position:relative;
-	 top:860px;
+	 top:170px;
 	 background-color:black;
 	 height:100px;
 	 color:white;
@@ -433,7 +474,7 @@ html {
 .anim .mySlides .dv1 .kontact a {
 	text-decoration:none;
 	padding:4px;
-	border:1px solid black;
+	border:1px solid #1a66ff;
 	border-radius: 20px;
 	margin:7px;	
 	float:left;
@@ -442,47 +483,63 @@ html {
 {
 	
 	width:100%;
-	min-height:1200px;
+	height:1670px;
 	position:relative;
+	top:40px;
     
 }
 
 .serviceDescription .serviceDescriptionInside1{
-	width: 100%;
+	width: 90%;
 	float: none;
 	background-color: white;
-	min-height: 300px;
+	height: 300px;
 	position: absolute;
     padding: 25px;
 	display: block;
-	left:0%;
-	top:0%;
+	left:5%;
+	top:100px;
+	font-size:13px;
+	font-weight:300;
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:0px;
 }
 .serviceDescription .serviceDescriptionInside2{
-	width: 100%;
+	width: 90%;
 	float: none;
 	background-color: white;
-	min-height: 500px;
+	min-height: 600px;
 	position: absolute;
     padding: 25px;
 	display: block;
-	left:0%;
-	top: 25%;
+	left:5%;
+	top: 400px;
+	border-radius:0px;
+	font-size:13px;
+	font-weight:300;
+
 }
 .serviceDescription .serviceDescriptionInside3{
-	width: 100%;
+	width: 90%;
 	float: none;
 	background-color: white;
-	min-height: 500px;
+	height: 645px;
 	position: absolute;
     padding: 25px;
 	display: block;
-	left:0%;
-	top:62%;
+	left:5%;
+	top:1000px;
+	font-size:13px;
+	font-weight:300;
+	border-top-left-radius:0px;
+	border-top-right-radius:0px;
 }
   
   .testyout{
   min-height:500px;
+  top:50px;
+  font-size:13px;
+  font-weight:300;
 }
  .testy {
       text-align: center;
@@ -492,7 +549,14 @@ html {
       float: none;
       display: block;
   } 
-  
+  .pp1{
+	  font-family:Open Sans;font-size:13px;font-weight:300;font-style:normal;
+  }
+  .pp2{ font-family:Open Sans;font-size:16px;font-weight:300;font-style:normal;}
+   .touchout{
+	   top:60px;
+	   
+   }
   .touchin1{
 	position:absolute;
 	width:100%;
@@ -500,7 +564,6 @@ html {
 	top:250px;
 	list-style-type: none;
 	padding:14px 50px;
-	background-color: #eee;
 	 
 	
 }
@@ -514,7 +577,6 @@ html {
 	height:550px;
 	top:800px;
 	padding:14px 20px;
-	background-color: #eee;
 	
 	
 }
@@ -538,9 +600,7 @@ html {
  input[type=submit]{
 	 width:40%;
 	 height:50px;
-	 border: 1px solid red;
 	 border-radius:50px;
-	 color:red;
 	 
  }
 /*.social {
@@ -574,9 +634,11 @@ html {
  */
   .aboutdiv{
 width:100%;
-min-height:1150px;
-top:1060px;
+height:1200px;
 position:relative;
+top:565px;
+border: 1px solid white;
+border-radius:12px;
 }
 
 .column1{
@@ -586,7 +648,6 @@ height:300px;
 position:absolute;
 top:70px;
 left:0;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .column2{
 width:100%;
@@ -595,16 +656,18 @@ position:absolute;
 top:370px;
 left:0;
 
-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 }
   .copyright{
 	 position:relative;
-	 top:1200px;
 	 background-color:black;
 	 height:100px;
 	 color:white;
 	 text-align:center;
 	 padding-top:50px;
+	 top:580px;
+ 	 border: 1px solid white;
+     border-top-left-radius:12px;
+	 border-top-right-radius:12px;
  }
   }
   
