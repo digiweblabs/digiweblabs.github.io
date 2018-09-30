@@ -229,35 +229,35 @@
 @keyframes servicemymove1{
 	0%{ background-color:#ffa366;}
 	5%{background-color: #ff6666;}
-	100%{background-color: #66c2ff;}
+	100%{background-color: #b300b3;}
 
 }
 @-webkit-keyframes servicemymove1{
     0%{ background-color:#ffa366;}
 	50%{background-color: #ff6666;}
-	100%{background-color: #66c2ff;}
+	100%{background-color: #b300b3;}
 	}	
 	
 	@keyframes servicemymove2{
-	0%{ background-color: #66c2ff;}
+	0%{ background-color: #b300b3;}
 	50%{background-color: #ffa366;}
 	100%{background-color:  #ff6666;}
 
 }
 @-webkit-keyframes servicemymove2{
-    0%{ background-color:#66c2ff;}
+    0%{ background-color:#b300b3;}
 	50%{background-color: #ffa366;}
 	100%{background-color:  #ff6666;}
 	}	
 	@keyframes servicemymove3{
 	 0%{ background-color:#ff6666;}
-	50%{background-color:#66c2ff;}
+	50%{background-color:#b300b3;}
 	100%{background-color: #ffa366;}
 
 }
 @-webkit-keyframes servicemymove3{
     0%{ background-color:#ff6666;}
-	50%{background-color:#66c2ff;}
+	50%{background-color:#b300b3;}
 	100%{background-color: #ffa366;}
 	}	*/
  table, th, td {
