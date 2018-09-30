@@ -10,6 +10,13 @@
      line-height: 1em;
 	  
   }
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
   .topnav{
     overflow: hidden;
     background-color: #00334d;
@@ -19,7 +26,8 @@
     z-index:999;
 	height:60px;
 	top:0;
-	border: 1px solid white;
+	border: 1px solid #00334d;
+	opacity:0.9;
 	
   }
   .topnav a{
@@ -130,10 +138,10 @@
 	overflow: auto;
     z-index:1;
 	top: 55px;
-	border: 1px solid white;
+	border: 1px solid #00334d;
 	color:#c2d6d6;
 	border-radius:12px;
-	
+	opacity:0.9;
 }
  .kontact a{
 	text-decoration:none;
@@ -158,9 +166,9 @@
 	position:relative;
 	top:70px;
 	background-color:#00334d;
-	border: 1px solid white;
+	border: 1px solid #00334d;
 	border-radius:12px;
-	
+	opacity:0.9;
 }
 .serviceDescriptionInside1{
 	width: 30%;
@@ -178,6 +186,7 @@
 	font-size:16px;
 	font-weight:500;
 	font-style:normal;
+	opacity:0.9;
 	/*-webkit-animation-name: servicemymove1; 
     -webkit-animation-duration: 5s; 
     animation-name: servicemymove1;
@@ -205,6 +214,7 @@
 	color: #669999;
 	border-radius:12px;
 	font-family:Open Sans;font-size:16px;font-weight:500;font-style:normal;
+	opacity:0.9;
 	/*-webkit-animation-name: servicemymove2; 
     -webkit-animation-duration: 5s; 
     animation-name: servicemymove2;
@@ -226,6 +236,7 @@
 	border-radius:12px;
 	color: #669999;
 	font-family:Open Sans;font-size:16px;font-weight:500;font-style:normal;
+	opacity:0.9;
 	/*-webkit-animation-name: servicemymove3; 
     -webkit-animation-duration: 5s; 
     animation-name: servicemymove3;
@@ -288,8 +299,9 @@
   top:100px;
   min-height:350px;
   color:#c2d6d6;
-  border: 1px solid white;
+  border: 1px solid #00334d;
   border-radius:12px;
+  opacity:0.9;
 }
 .testy {
   padding: 16px;
@@ -331,9 +343,10 @@ font-style:normal;
 	top:130px;
 	background-color: #00334d;
 	color:#c2d6d6;
-	border: 1px solid white;
+	border: 1px solid #00334d;
     border-radius:12px;
 	font-family:Open Sans;font-size:16px;font-weight:500;font-style:normal;
+	opacity:0.9;
 	
 }
 .touchin1{
@@ -406,8 +419,9 @@ height:500px;
 top:150px;
 position:relative;
 background-color:#00334d;
-border: 1px solid white;
+border: 1px solid #00334d;
 border-radius:12px;
+opacity:0.9;
 
 }
 .column1{
@@ -461,8 +475,9 @@ height:500px;
 top:170px;
 position:relative;
 background-color:#00334d;
-border: 1px solid white;
+border: 1px solid #00334d;
 border-radius:12px;
+opacity:0.9;
 
 }
 .column3{
