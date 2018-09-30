@@ -162,48 +162,104 @@
 .serviceDescriptionInside1{
 	width: 30%;
 	float: left;
-	background-color: white;
-	height: 600px;
+	
+	height: 620px;
 	position: absolute;
     padding: 25px;
 	left:2%;
 	top:12%;
-	color:#669999;
+	color:white;
 	border-radius:12px;
 	line-height:2;
 	font-family:Open Sans;
 	font-size:16px;
 	font-weight:500;
 	font-style:normal;
+	-webkit-animation-name: servicemymove1; 
+    -webkit-animation-duration: 15s; 
+    animation-name: servicemymove1;
+    animation-duration: 15s;
+	-webkit-animation-iteration-count:infinite;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-name: servicemymove1;
+    -moz-animation-duration: 15s;
 	
 }
 .serviceDescriptionInside2{
 	width: 30%;
 	float: left;
-	background-color: white;
-	height: 600px;
+	
+	height: 620px;
 	position: absolute;
     padding: 25px;
 	left :34%;
 	top:12%;
-	color:#669999;
+	color:white;
 	border-radius:12px;
 	font-family:Open Sans;font-size:16px;font-weight:500;font-style:normal;
+	-webkit-animation-name: servicemymove2; 
+    -webkit-animation-duration: 15s; 
+    animation-name: servicemymove2;
+    animation-duration: 15s;
+	-webkit-animation-iteration-count:infinite;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-name: servicemymove2;
+    -moz-animation-duration: 15s;
 }
 .serviceDescriptionInside3{
 	width: 30%;
 	float: left;
-	background-color: white;
-	height: 600px;
+	height: 620px;
 	position: absolute;
     padding: 20px;
 	left:66%;
 	top:12%;
 	border-radius:12px;
-	color:#669999;
+	color:white;
 	font-family:Open Sans;font-size:16px;font-weight:500;font-style:normal;
+	-webkit-animation-name: servicemymove3; 
+    -webkit-animation-duration: 15s; 
+    animation-name: servicemymove3;
+    animation-duration: 15s;
+	-webkit-animation-iteration-count:infinite;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-name: servicemymove3;
+    -moz-animation-duration: 15s;
 }
+@keyframes servicemymove1{
+	0%{ background-color:#ffa366;}
+	66%{background-color: #ff6666;}
+	100%{background-color: #66c2ff;}
 
+}
+@-webkit-keyframes servicemymove1{
+    0%{ background-color:#ffa366;}
+	66%{background-color: #ff6666;}
+	100%{background-color: #66c2ff;}
+	}	
+	
+	@keyframes servicemymove2{
+	0%{ background-color: #66c2ff;}
+	66%{background-color: #ffa366;}
+	100%{background-color:  #ff6666;}
+
+}
+@-webkit-keyframes servicemymove2{
+    0%{ background-color:#66c2ff;}
+	66%{background-color: #ffa366;}
+	100%{background-color:  #ff6666;}
+	}	
+	@keyframes servicemymove3{
+	 0%{ background-color:#ff6666;}
+	66%{background-color:#66c2ff;}
+	100%{background-color: #ffa366;}
+
+}
+@-webkit-keyframes servicemymove3{
+    0%{ background-color:#ff6666;}
+	66%{background-color:#66c2ff;}
+	100%{background-color: #ffa366;}
+	}	*/
  table, th, td {
 	border-collapse: collapse;
 	
@@ -452,6 +508,33 @@ color:white;
 	padding-top:20px;
 	
 	
+}
+.aboutdiv1{
+width:100%;
+height:500px;
+top:150px;
+position:relative;
+background-color:#00334d;
+border: 1px solid white;
+border-radius:12px;
+
+}
+.column3{
+float:left;
+width:50%;
+height:500px;
+position:absolute;
+top:70px;
+left:0;
+color:white;
+}
+.column4{
+width:50%;
+height:500px;
+position:absolute;
+top:70px;
+left:50%;
+color:white;
 }
 html {
   box-sizing: border-box;
