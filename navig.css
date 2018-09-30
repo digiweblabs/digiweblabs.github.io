@@ -171,21 +171,21 @@
     padding: 25px;
 	left:2%;
 	top:12%;
-	color:white;
+	color: #669999;
 	border-radius:12px;
 	line-height:2;
 	font-family:Open Sans;
 	font-size:16px;
 	font-weight:500;
 	font-style:normal;
-	-webkit-animation-name: servicemymove1; 
+	/*-webkit-animation-name: servicemymove1; 
     -webkit-animation-duration: 5s; 
     animation-name: servicemymove1;
     animation-duration: 5s;
 	-webkit-animation-iteration-count:infinite;
 	-moz-animation-iteration-count:infinite;
 	-moz-animation-name: servicemymove1;
-    -moz-animation-duration: 5s;
+    -moz-animation-duration: 5s;*/
 	
 	/*background-image: url("banner-img.png");
 	background-repeat: no-repeat;
@@ -202,17 +202,17 @@
     padding: 25px;
 	left :34%;
 	top:12%;
-	color:white;
+	color: #669999;
 	border-radius:12px;
 	font-family:Open Sans;font-size:16px;font-weight:500;font-style:normal;
-	-webkit-animation-name: servicemymove2; 
+	/*-webkit-animation-name: servicemymove2; 
     -webkit-animation-duration: 5s; 
     animation-name: servicemymove2;
     animation-duration: 5s;
 	-webkit-animation-iteration-count:infinite;
 	-moz-animation-iteration-count:infinite;
 	-moz-animation-name: servicemymove2;
-    -moz-animation-duration: 5s;
+    -moz-animation-duration: 5s;*/
 }
 .serviceDescriptionInside3{
 	width: 30%;
@@ -223,18 +223,18 @@
 	left:66%;
 	top:12%;
 	border-radius:12px;
-	color:white;
+	color: #669999;
 	font-family:Open Sans;font-size:16px;font-weight:500;font-style:normal;
-	-webkit-animation-name: servicemymove3; 
+	/*-webkit-animation-name: servicemymove3; 
     -webkit-animation-duration: 5s; 
     animation-name: servicemymove3;
     animation-duration: 5s;
 	-webkit-animation-iteration-count:infinite;
 	-moz-animation-iteration-count:infinite;
 	-moz-animation-name: servicemymove3;
-    -moz-animation-duration: 5s;
+    -moz-animation-duration: 5s;*/
 }
-@keyframes servicemymove1{
+/*@keyframes servicemymove1{
 	0%{ background-color:#ffa366;}
 	5%{background-color: #ff6666;}
 	100%{background-color: #b300b3;}
