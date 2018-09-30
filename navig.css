@@ -20,8 +20,7 @@
 	height:60px;
 	top:0;
 	border: 1px solid white;
-	border-bottom-left-radius:12px;
-	border-bottom-right-radius:12px;
+	
   }
   .topnav a{
     float:left;
