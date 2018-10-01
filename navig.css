@@ -26,7 +26,6 @@
     z-index:999;
 	height:60px;
 	top:0;
-	border: 1px solid #00334d;
 	opacity:0.9;
 	
   }
@@ -137,10 +136,9 @@
 	position:relative;
 	overflow: auto;
     z-index:1;
-	top: 55px;
-	border: 1px solid #00334d;
+	top: 44px;
 	color:#c2d6d6;
-	border-radius:12px;
+	
 	opacity:0.9;
 }
  .kontact a{
@@ -164,10 +162,8 @@
 	width:100%;
 	height:750px;
 	position:relative;
-	top:70px;
+	top:28px;
 	background-color:#00334d;
-	border: 1px solid #00334d;
-	border-radius:12px;
 	opacity:0.9;
 }
 .serviceDescriptionInside1{
@@ -180,7 +176,6 @@
 	left:2%;
 	top:12%;
 	color: #669999;
-	border-radius:12px;
 	line-height:2;
 	font-family:Open Sans;
 	font-size:16px;
@@ -212,7 +207,6 @@
 	left :34%;
 	top:12%;
 	color: #669999;
-	border-radius:12px;
 	font-family:Open Sans;font-size:16px;font-weight:500;font-style:normal;
 	opacity:0.9;
 	/*-webkit-animation-name: servicemymove2; 
@@ -233,7 +227,6 @@
     padding: 20px;
 	left:66%;
 	top:12%;
-	border-radius:12px;
 	color: #669999;
 	font-family:Open Sans;font-size:16px;font-weight:500;font-style:normal;
 	opacity:0.9;
@@ -296,11 +289,9 @@
   background-color: #00334d;
   position:relative;
   width:100%;
-  top:100px;
+  top:18px;
   min-height:350px;
   color:#c2d6d6;
-  border: 1px solid #00334d;
-  border-radius:12px;
   opacity:0.9;
 }
 .testy {
@@ -340,11 +331,9 @@ font-style:normal;
 	position:relative;
 	width:100%;
 	height:860px;
-	top:130px;
+	top:8px;
 	background-color: #00334d;
 	color:#c2d6d6;
-	border: 1px solid #00334d;
-    border-radius:12px;
 	font-family:Open Sans;font-size:16px;font-weight:500;font-style:normal;
 	opacity:0.9;
 	
@@ -416,11 +405,9 @@ textarea{
  .aboutdiv{
 width:100%;
 height:500px;
-top:150px;
+top:-2px;
 position:relative;
 background-color:#00334d;
-border: 1px solid #00334d;
-border-radius:12px;
 opacity:0.9;
 
 }
@@ -472,11 +459,9 @@ color:white;
 .aboutdiv1{
 width:100%;
 height:500px;
-top:170px;
+top:-12px;
 position:relative;
 background-color:#00334d;
-border: 1px solid #00334d;
-border-radius:12px;
 opacity:0.9;
 
 }
@@ -525,7 +510,7 @@ html {
 
  .copyright{
 	 position:relative;
-	 top:170px;
+	 top:-12px;
 	 background-color:black;
 	 height:100px;
 	 color:white;
@@ -573,9 +558,9 @@ html {
 {
 	
 	width:100%;
-	height:1750px;
+	height:1550px;
 	position:relative;
-	top:40px;
+	top:28px;
     
 }
 
@@ -591,14 +576,12 @@ html {
 	top:100px;
 	font-size:13px;
 	font-weight:300;
-	border-bottom-left-radius:0px;
-	border-bottom-right-radius:0px;
 }
 .serviceDescription .serviceDescriptionInside2{
 	width: 90%;
 	float: none;
 	background-color: white;
-	min-height: 600px;
+	height: 500px;
 	position: absolute;
     padding: 25px;
 	display: block;
@@ -613,21 +596,19 @@ html {
 	width: 90%;
 	float: none;
 	background-color: white;
-	height: 660px;
+	height: 560px;
 	position: absolute;
     padding: 25px;
 	display: block;
 	left:5%;
-	top:950px;
+	top:900px;
 	font-size:13px;
 	font-weight:300;
-	border-top-left-radius:0px;
-	border-top-right-radius:0px;
 }
   
   .testyout{
   min-height:500px;
-  top:50px;
+  top:18px;
   font-size:13px;
   font-weight:300;
 }
@@ -644,7 +625,8 @@ html {
   }
   .pp2{ font-family:Open Sans;font-size:16px;font-weight:300;font-style:normal;}
    .touchout{
-	   top:60px;
+	   top:-73px;
+	   height:1000px;
 	   
    }
   .touchin1{
@@ -726,9 +708,8 @@ html {
 width:100%;
 height:700px;
 position:relative;
-top:565px;
-border: 1px solid white;
-border-radius:12px;
+top:267px;
+
 }
 
 .column1{
@@ -751,10 +732,8 @@ left:0;
 width:100%;
 height:700px;
 position:relative;
-top:575px;
-border: 1px solid white;
-border-radius:12px;
-}
+top:257px;
+ }
 
 .column3{
 float:none;
@@ -779,10 +758,7 @@ left:0;
 	 color:white;
 	 text-align:center;
 	 padding-top:50px;
-	 top:580px;
- 	 border: 1px solid white;
-     border-top-left-radius:12px;
-	 border-top-right-radius:12px;
+	 top:258px;
  }
   }
   
