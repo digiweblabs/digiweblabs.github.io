@@ -625,7 +625,7 @@ html {
   }
   .pp2{ font-family:Open Sans;font-size:16px;font-weight:300;font-style:normal;}
    .touchout{
-	   top:-73px;
+	   top:8px;
 	   height:1000px;
 	   
    }
@@ -708,7 +708,7 @@ html {
 width:100%;
 height:700px;
 position:relative;
-top:267px;
+top:348px;
 
 }
 
@@ -732,7 +732,7 @@ left:0;
 width:100%;
 height:700px;
 position:relative;
-top:257px;
+top:338px;
  }
 
 .column3{
@@ -758,7 +758,7 @@ left:0;
 	 color:white;
 	 text-align:center;
 	 padding-top:50px;
-	 top:258px;
+	 top:338px;
  }
   }
   
