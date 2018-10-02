@@ -584,7 +584,7 @@ html {
 .serviceDescription .serviceDescriptionInside2{
 	width: 90%;
 	float: none;
-	background-color: red;
+	background-color: green;
 	height: 500px;
 	position: absolute;
     padding: 25px;
@@ -606,7 +606,7 @@ html {
     padding: 25px;
 	display: block;
 	left:5%;
-	top:925px;
+	top:935px;
 	font-size:13px;
 	font-weight:300;
 	clear:both;
