@@ -584,7 +584,7 @@ textarea{
 	font-weight:300;
 	opacity:0.9;
 	overflow:hidden;
-	border: 2px solid #ffd9d9;
+	border: 2px dotted #ffd9d9;
 }
 .serviceDescription .serviceDescriptionInside2{
 	width: 90%;
@@ -598,7 +598,8 @@ textarea{
 	font-size:13px;
 	font-weight:300;
 	overflow:hidden;
-	border: 1px solid #ffd9d9;
+	border: 2px dotted #ffd9d9;
+    border-top: 2px none #ffd9d9;
 
 }
 .serviceDescription .serviceDescriptionInside3{
@@ -614,7 +615,8 @@ textarea{
 	font-weight:300;
 	clear:both;
 	overflow:hidden;
-	border: 1px solid  #ffd9d9;
+    border: 2px dotted #ffd9d9;
+    border-top: 2px none #ffd9d9;
 }
   
   .testyout{
@@ -636,7 +638,7 @@ textarea{
 	  font-family:Open Sans;font-size:13px;font-weight:300;font-style:normal;
   }
   .pp2{ font-family:Open Sans;font-size:14px;font-weight:300;font-style:normal;}
-   
+  /* 
 .social {
 	 
 	 position:relative;
@@ -664,7 +666,7 @@ textarea{
   margin: 1px 1px;
   border-radius:50%;
   }
- 
+ */
  
   .aboutdiv{
 width:100%;
@@ -847,6 +849,8 @@ left:0;
 	font-weight:300;
 	opacity:0.9;
 	overflow:hidden;
+	border: 2px dotted #ffd9d9;
+    border-top: 2px none #ffd9d9;
 }
 .serviceDescription .serviceDescriptionInside2{
 	width: 90%;
@@ -861,6 +865,8 @@ left:0;
 	font-size:13px;
 	font-weight:300;
 	overflow:hidden;
+	border: 2px dotted #ffd9d9;
+    border-top: 2px none #ffd9d9;
 
 }
 .serviceDescription .serviceDescriptionInside3{
@@ -874,8 +880,9 @@ left:0;
 	top:900px;
 	font-size:13px;
 	font-weight:300;
-	clear:both;
-	overflow:hidden
+	overflow:hidden;
+	border: 2px dotted #ffd9d9;
+    border-top: 2px none #ffd9d9;
 }
   
   .testyout{
