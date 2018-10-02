@@ -4,6 +4,8 @@
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  height: 100%;
+  overflow: hidden;
     }
   
   body{
@@ -528,13 +530,6 @@ textarea{
  
   @media screen and (max-width: 319px) {
 	  
-	   html{
-    background:  url('digiweb.gif') no-repeat center center fixed; 
-    background-size: cover;
-	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-    }
 	.topnav{position:absolute;opacity:0.9;}
     .topnav a{display: none;}
      .topnav .logo{display:block;
@@ -801,13 +796,7 @@ left:0;
   
   
   @media screen and (max-width: 1050px) and (min-width:320px) {
-	   html{
-    background:  url('digiweb.gif') no-repeat center center fixed; 
-    background-size: cover;
-	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-    }
+
 	.topnav{position:absolute;opacity:0.9;}
     .topnav a{display: none;}
      .topnav .logo{display:block;
