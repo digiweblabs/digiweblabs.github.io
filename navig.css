@@ -1,4 +1,9 @@
-  body{
+ html{
+    background:  url('ezgif.com-gif-maker.gif') no-repeat center center fixed; 
+    background-size: cover;
+    }
+
+ body{
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
 	
@@ -11,13 +16,13 @@
      line-height: 1em;
 	  
   }
-  #myVideo {
+ /* #myVideo {
     position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%; 
     min-height: 100%;
-}
+}*/
   .topnav{
     overflow: hidden;
     background-color: #00334d;
@@ -793,11 +798,6 @@ left:0;
       float: right;
       display: block;
     }
-	.anim{opacity:0.9;
-	height:370px;
-	clear:both;
-	overflow:hidden;
-	}
 	
 	.anim .mySlides .dv{
 		float: none;
