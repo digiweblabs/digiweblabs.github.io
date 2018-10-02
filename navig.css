@@ -583,12 +583,12 @@ html {
 	width: 90%;
 	float: none;
 	background-color: white;
-	height: 500px;
+	min-height: 500px;
 	position: absolute;
     padding: 25px;
 	display: block;
 	left:5%;
-	top: 400px;
+	top: 390px;
 	border-radius:0px;
 	font-size:13px;
 	font-weight:300;
