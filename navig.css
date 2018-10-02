@@ -529,7 +529,8 @@ html {
       float: right;
       display: block;
     }
-	.anim{opacity:0.9;}
+	.anim{opacity:0.9;
+	background-color:red;}
 	
 	.anim .mySlides .dv{
 		float: none;
