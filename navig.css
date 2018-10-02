@@ -169,7 +169,7 @@
 .serviceDescriptionInside1{
 	width: 30%;
 	float: left;
-	background-color: #fff2f2;
+	background-color: white;
 	height: 620px;
 	position: absolute;
     padding: 25px;
@@ -200,7 +200,7 @@
 .serviceDescriptionInside2{
 	width: 30%;
 	float: left;
-	background-color: #fff2f2;
+	background-color: white;
 	height: 620px;
 	position: absolute;
     padding: 25px;
@@ -221,7 +221,7 @@
 .serviceDescriptionInside3{
 	width: 30%;
 	float: left;
-	background-color: #fff2f2;
+	background-color: white;
 	height: 620px;
 	position: absolute;
     padding: 20px;
@@ -570,7 +570,7 @@ html {
 .serviceDescription .serviceDescriptionInside1{
 	width: 90%;
 	float: none;
-	background-color: #fff2f2;
+	background-color: white;
 	height: 300px;
 	position: absolute;
     padding: 25px;
@@ -583,7 +583,7 @@ html {
 .serviceDescription .serviceDescriptionInside2{
 	width: 90%;
 	float: none;
-	background-color: #fff2f2;
+	background-color: white;
 	height: 555px;
 	position: absolute;
     padding: 25px;
@@ -599,7 +599,7 @@ html {
 .serviceDescription .serviceDescriptionInside3{
 	width: 90%;
 	float: none;
-	background-color: #fff2f2;
+	background-color: white;
 	height: 560px;
 	position: absolute;
     padding: 25px;
