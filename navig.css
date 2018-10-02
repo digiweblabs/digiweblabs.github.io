@@ -831,7 +831,7 @@ left:0;
 	top:28px;
     opacity:0.9;
 	overflow:hidden;
-    background-color:red;
+    
 }
 
 .serviceDescription .serviceDescriptionInside1{
@@ -850,7 +850,7 @@ left:0;
 }
 .serviceDescription .serviceDescriptionInside2{
 	width: 90%;
-	background-color: yellow;
+	background-color: white;
 	height: 550px;
 	position: absolute;
     padding: 0px;
@@ -865,7 +865,7 @@ left:0;
 }
 .serviceDescription .serviceDescriptionInside3{
 	width: 90%;
-	background-color: green;
+	background-color: white;
 	height: 530px;
 	position: absolute;
     padding: 0px;
