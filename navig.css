@@ -530,7 +530,8 @@ html {
       display: block;
     }
 	.anim{opacity:0.9;
-	background-color:red;}
+	background-color:red;
+	height:500px;}
 	
 	.anim .mySlides .dv{
 		float: none;
