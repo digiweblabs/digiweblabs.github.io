@@ -585,7 +585,7 @@ html {
 	width: 90%;
 	float: none;
 	background-color: green;
-	height: 550px;
+	height: 555px;
 	position: absolute;
     padding: 25px;
 	display: block;
@@ -606,7 +606,7 @@ html {
     padding: 25px;
 	display: block;
 	left:5%;
-	top:950px;
+	top:955px;
 	font-size:13px;
 	font-weight:300;
 	clear:both;
