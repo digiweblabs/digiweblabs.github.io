@@ -518,7 +518,7 @@ textarea{
  }
  
  
-  @media screen and (max-width: 1050px) {
+  @media screen and (max-width: 319px) {
 	.topnav{position:absolute;opacity:0.9;}
     .topnav a{display: none;}
      .topnav .logo{display:block;
@@ -531,6 +531,7 @@ textarea{
 	.anim{opacity:0.9;
 	height:370px;
 	clear:both;
+	overflow:hidden;
 	}
 	
 	.anim .mySlides .dv{
@@ -566,8 +567,8 @@ textarea{
 	position:relative;
 	top:28px;
     opacity:0.9;
-	
-    
+	overflow:hidden;
+   
 }
 
 .serviceDescription .serviceDescriptionInside1{
@@ -582,20 +583,22 @@ textarea{
 	font-size:13px;
 	font-weight:300;
 	opacity:0.9;
+	overflow:hidden;
+	border: 2px solid #ffd9d9;
 }
 .serviceDescription .serviceDescriptionInside2{
 	width: 90%;
 	background-color: white;
-	height: 675px;
+	height: 665px;
 	position: absolute;
     padding: 0px;
 	display: block;
 	left:5%;
 	top: 440px;
-	border-radius:0px;
 	font-size:13px;
 	font-weight:300;
-	clear:both;
+	overflow:hidden;
+	border: 1px solid #ffd9d9;
 
 }
 .serviceDescription .serviceDescriptionInside3{
@@ -606,10 +609,273 @@ textarea{
     padding: 0px;
 	display: block;
 	left:5%;
-	top:1115px;
+	top:1105px;
 	font-size:13px;
 	font-weight:300;
 	clear:both;
+	overflow:hidden;
+	border: 1px solid  #ffd9d9;
+}
+  
+  .testyout{
+  min-height:500px;
+  top:18px;
+  font-size:13px;
+  font-weight:300;
+  opacity:0.9;
+}
+ .testy {
+      text-align: center;
+  }
+  .testy img {
+      margin: auto;
+      float: none;
+      display: block;
+  } 
+ .pp1{
+	  font-family:Open Sans;font-size:13px;font-weight:300;font-style:normal;
+  }
+  .pp2{ font-family:Open Sans;font-size:14px;font-weight:300;font-style:normal;}
+   
+.social {
+	 
+	 position:relative;
+	 top:1060px;
+	 height:50px;
+	 width:100%;
+	 background-color: #eee;
+	 border-collapse:separate;
+	 border-spacing:10px 5px;
+	 
+ }
+ .s1{ 
+     width:14.28%;
+	 height:50px;
+	 align-items:center;
+	 
+ }
+ #s{ 
+   padding: 20px 20px;
+  font-size: 15px;
+  width: 20px;
+  height:20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 1px 1px;
+  border-radius:50%;
+  }
+ 
+ 
+  .aboutdiv{
+width:100%;
+height:700px;
+position:relative;
+top:8px;
+opacity:0.9;
+
+}
+
+.column1{
+float:none;
+width:100%;
+height:300px;
+position:absolute;
+top:70px;
+left:0;
+}
+.column2{
+width:100%;
+height:300px;
+position:absolute;
+top:370px;
+left:0;
+
+}
+ .aboutdiv1{
+width:100%;
+height:700px;
+position:relative;
+top:-2px;
+opacity:0.9;
+ }
+
+.column3{
+float:none;
+width:100%;
+height:300px;
+position:absolute;
+top:70px;
+left:0;
+}
+.column4{
+width:100%;
+height:300px;
+position:absolute;
+top:360px;
+left:0;
+
+}
+.touchout{
+	   top:-12px;
+	   height:1000px;
+	   opacity:0.9;
+	 
+	   
+   }
+  .touchin1{
+	position:absolute;
+	width:100%;
+	height:500px;
+	top:290px;
+	list-style-type: none;
+	padding:14px 50px;
+	
+	
+}
+  li {
+    float: none;
+	width: 100%;
+   }
+   .touchin2{
+	position:absolute;
+	width:100%;
+	height:550px;
+	top:800px;
+	padding:14px 20px;
+	
+	
+}
+
+.fieldli {
+    float: none;
+	width:100%;
+	list-style-type: none;
+	
+	
+	
+}
+ input{
+	 width:100%;
+	 height:50px;
+ }
+ select{
+	 width:100%;
+	 height:50px;
+ }
+ input[type=submit]{
+	 width:40%;
+	 height:50px;
+	 border-radius:50px;
+	 
+ }
+  .copyright{
+	 position:relative;
+	 background-color:black;
+	 height:100px;
+	 color:white;
+	 text-align:center;
+	 padding-top:50px;
+	 top:338px;
+ }
+  }
+  
+  
+  
+  @media screen and (max-width: 1050px) and (min-width:320px) {
+	.topnav{position:absolute;opacity:0.9;}
+    .topnav a{display: none;}
+     .topnav .logo{display:block;
+          float:left;
+         }
+    .topnav .icon{
+      float: right;
+      display: block;
+    }
+	.anim{opacity:0.9;
+	height:370px;
+	clear:both;
+	overflow:hidden;
+	}
+	
+	.anim .mySlides .dv{
+		float: none;
+		display: none;
+		visibility:hidden;
+		width:0px;
+		
+	}
+	.anim .mySlides .dv1{
+		float: none;
+		display: block;
+		min-width: 100%;
+		padding:7px;
+		
+		
+	}
+	
+.anim .mySlides .dv1 .kontact a {
+	text-decoration:none;
+	padding:4px;
+	border:1px solid #1a66ff;
+	border-radius: 20px;
+	margin:7px;	
+	float:left;
+}
+
+.serviceDescription
+{
+	
+	width:100%;
+	height:1450px;
+	position:relative;
+	top:28px;
+    opacity:0.9;
+	overflow:hidden;
+    background-color:red;
+}
+
+.serviceDescription .serviceDescriptionInside1{
+	width: 90%;
+	background-color: white;
+	height: 250px;
+	position: absolute;
+    padding: 5px;
+	display: block;
+	left:5%;
+	top:100px;
+	font-size:13px;
+	font-weight:300;
+	opacity:0.9;
+	overflow:hidden;
+}
+.serviceDescription .serviceDescriptionInside2{
+	width: 90%;
+	background-color: yellow;
+	height: 550px;
+	position: absolute;
+    padding: 0px;
+	display: block;
+	left:5%;
+	top: 350px;
+	border-radius:0px;
+	font-size:13px;
+	font-weight:300;
+	overflow:hidden;
+
+}
+.serviceDescription .serviceDescriptionInside3{
+	width: 90%;
+	background-color: green;
+	height: 530px;
+	position: absolute;
+    padding: 0px;
+	display: block;
+	left:5%;
+	top:900px;
+	font-size:13px;
+	font-weight:300;
+	clear:both;
+	overflow:hidden
 }
   
   .testyout{
