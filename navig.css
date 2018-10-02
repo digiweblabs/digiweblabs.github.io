@@ -142,6 +142,7 @@
 	
 	opacity:0.9;
 }
+.dv1{padding:70px;}
  .kontact a{
 	text-decoration:none;
 	padding:8px;
@@ -169,11 +170,10 @@
 }
 .serviceDescriptionInside1{
 	width: 30%;
-	float: left;
 	background-color: white;
 	height: 620px;
 	position: absolute;
-    padding: 25px;
+    padding: 10px;
 	left:2%;
 	top:12%;
 	color: #669999;
@@ -200,11 +200,10 @@
 }
 .serviceDescriptionInside2{
 	width: 30%;
-	float: left;
 	background-color: white;
 	height: 620px;
 	position: absolute;
-    padding: 25px;
+    padding: 5px;
 	left :34%;
 	top:12%;
 	color: #669999;
@@ -221,11 +220,10 @@
 }
 .serviceDescriptionInside3{
 	width: 30%;
-	float: left;
 	background-color: white;
 	height: 620px;
 	position: absolute;
-    padding: 20px;
+    padding: 5px;
 	left:66%;
 	top:12%;
 	color: #669999;
@@ -531,7 +529,9 @@ textarea{
       display: block;
     }
 	.anim{opacity:0.9;
-	height:570px;}
+	height:370px;
+	clear:both;
+	}
 	
 	.anim .mySlides .dv{
 		float: none;
@@ -557,40 +557,41 @@ textarea{
 	margin:7px;	
 	float:left;
 }
+
 .serviceDescription
 {
 	
 	width:100%;
-	height:1600px;
+	height:1790px;
 	position:relative;
 	top:28px;
+    opacity:0.9;
 	
     
 }
 
 .serviceDescription .serviceDescriptionInside1{
 	width: 90%;
-	float: none;
 	background-color: white;
-	height: 300px;
+	height: 340px;
 	position: absolute;
-    padding: 25px;
+    padding: 5px;
 	display: block;
 	left:5%;
 	top:100px;
 	font-size:13px;
 	font-weight:300;
+	opacity:0.9;
 }
 .serviceDescription .serviceDescriptionInside2{
 	width: 90%;
-	float: none;
 	background-color: white;
-	height: 555px;
+	height: 675px;
 	position: absolute;
-    padding: 25px;
+    padding: 0px;
 	display: block;
 	left:5%;
-	top: 400px;
+	top: 440px;
 	border-radius:0px;
 	font-size:13px;
 	font-weight:300;
@@ -599,14 +600,13 @@ textarea{
 }
 .serviceDescription .serviceDescriptionInside3{
 	width: 90%;
-	float: none;
 	background-color: white;
-	height: 560px;
+	height: 650px;
 	position: absolute;
-    padding: 25px;
+    padding: 0px;
 	display: block;
 	left:5%;
-	top:955px;
+	top:1115px;
 	font-size:13px;
 	font-weight:300;
 	clear:both;
@@ -627,10 +627,10 @@ textarea{
       float: none;
       display: block;
   } 
-  .pp1{
+ .pp1{
 	  font-family:Open Sans;font-size:13px;font-weight:300;font-style:normal;
   }
-  .pp2{ font-family:Open Sans;font-size:16px;font-weight:300;font-style:normal;}
+  .pp2{ font-family:Open Sans;font-size:14px;font-weight:300;font-style:normal;}
    
 /*.social {
 	 
@@ -720,11 +720,11 @@ left:0;
   .touchin1{
 	position:absolute;
 	width:100%;
-	height:550px;
-	top:250px;
+	height:500px;
+	top:290px;
 	list-style-type: none;
 	padding:14px 50px;
-	 
+	
 	
 }
   li {
