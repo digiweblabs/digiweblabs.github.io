@@ -530,7 +530,6 @@ html {
       display: block;
     }
 	.anim{opacity:0.9;
-	background-color:red;
 	height:570px;}
 	
 	.anim .mySlides .dv{
@@ -585,7 +584,7 @@ html {
 	width: 90%;
 	float: none;
 	background-color: red;
-	min-height: 500px;
+	height: 500px;
 	position: absolute;
     padding: 25px;
 	display: block;
