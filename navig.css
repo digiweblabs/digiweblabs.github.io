@@ -1,5 +1,5 @@
  html{
-    background:  url('ezgif.com-gif-maker.gif') no-repeat center center fixed; 
+    background:  url('digiweb.gif') no-repeat center center fixed; 
     background-size: cover;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
@@ -529,7 +529,7 @@ textarea{
   @media screen and (max-width: 319px) {
 	  
 	   html{
-    background:  url('ezgif.com-gif-maker.gif') no-repeat center center fixed; 
+    background:  url('digiweb.gif') no-repeat center center fixed; 
     background-size: cover;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
@@ -802,7 +802,7 @@ left:0;
   
   @media screen and (max-width: 1050px) and (min-width:320px) {
 	   html{
-    background:  url('ezgif.com-gif-maker.gif') no-repeat center center fixed; 
+    background:  url('digiweb.gif') no-repeat center center fixed; 
     background-size: cover;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
