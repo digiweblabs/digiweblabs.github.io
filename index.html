@@ -10,6 +10,11 @@
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script type="text/javascript">
+$(window).load(function() {
+    $(".loader").fadeOut("slow");
+});
+</script>
 <script>
 $(document).ready(function(){
     $(".icon").click(function(){
@@ -55,11 +60,7 @@ m=0;
 }
 myfunction();// it will called once page loaded
 </script>
-<!--<script type="text/javascript">
-$(window).load(function() {
-    $(".loader").fadeOut("slow");
-});
-</script>-->
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
 .mySlides {display:none;}
@@ -119,8 +120,7 @@ $(window).load(function() {
       <a href="#Contact">Contact Us</a>
 	  <a href="tel:+91-9056135266"><i class="fa fa-phone"></i> (91)-9056135266</a>
 </div>
-  
- <!-- <div class="loader"></div>-->
+ <div class="loader"></div>
   <!-- service slider-->
   
  <div class="anim w3-content w3-section"style="max-width:100%; overflow:hidden">
