@@ -20,6 +20,15 @@
      line-height: 1em;
 	  
   }
+  #img101{
+	
+	border-radius:50%;
+	width:120px;
+}
+#b101{ border:1px solid #eee;
+        border-radius:8px;
+		background-color:white;
+   }
   
   .loaderout { 
 	position: fixed;
