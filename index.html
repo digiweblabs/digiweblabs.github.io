@@ -1,520 +1,327 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script type="text/javascript">
-$(window).load(function() {
-    $(".loader").fadeOut("slow");
-});
-</script>-->
-  <title>DigiWeb Labs</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-  <meta name="description" content="DigiWeb Labs|Website-Development|Web design|Digital Marketing|Event Management Service|Training|Website-Development Company in India, Delhi, Delhi_NCR"/>
-  <link rel="stylesheet" href="navig.css">
-  <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-  
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <title>Digiweb Labs</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script>
-$(document).ready(function(){
-    $(".icon").click(function(){
-        $(".vertical-menu").slideToggle("slow");
-    });
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+ 
+  <script>
+  $(document).ready(function(){
+  $(window).scroll(function(){
+  var scroll=$(window).scrollTop();
+  if(scroll > 400){
+  $('.back').css({"background-color":"#00334d","opacity":"1"});
+  }
+  else{
+  $('.back').css({"background-color":"#00111a","opacity":"1"});
+  }
+  });
+  });
+  </script>
+   <script>
+  $(document).ready(function() {
+  $('#contact-form').submit(function(e) {
+    var name    = document.getElementById('name')
+    var email   = document.getElementById('email')
+    var message = document.getElementById('message')
 
+    if (!name.value || !email.value || !message.value) {
+      alertify.error("Please check your entries");
+      return false;
+    } else {
+      $.ajax({
+        method: 'POST',
+        url: 'https://formspree.io/dgweblabs@gmail.com',
+        data: $('#contact-form').serialize(),
+        datatype: 'json'
+      });
+      e.preventDefault();
+      $(this).get(0).reset();
+      alertify.success("Message sent");
+    }
+  });
 });
 </script>
-<script>
-var m,x,y,z;
-function myfunction(){
-m=0;
-setInterval(function() {
-if(m==0){
-x=document.getElementById("d1");
-x.style.display="block";
-y=document.getElementById("d2");
-y.style.display="none";
-z=document.getElementById("d3");
-z.style.display="none";
-m=1;
-}
-else if(m==1)
-{
-x=document.getElementById("d1");
-x.style.display="none";
-y=document.getElementById("d2");
-y.style.display="block";
-z=document.getElementById("d3");
-z.style.display="none";
-m=2;
-}
-else if(m==2){
-x=document.getElementById("d1");
-x.style.display="none";
-y=document.getElementById("d2");
-y.style.display="none";
-z=document.getElementById("d3");
-z.style.display="block";
-m=0;
-}
-},4000);
-}
-myfunction();// it will called once page loaded
-</script>
-
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-.mySlides {display:none;}
-</style>
 </head>
 <body>
-<!--<video playsinline autoplay muted loop id="myVideo">
-  <source src="4k background footage Ae plugin plexus (1).mp4" type="video/mp4">
-  <source src="4k background footage Ae plugin plexus (1).webm" type="video/webm">
-  <source src="4k background footage Ae plugin plexus (1).ogv" type="video/ogv">
-</video>-->
 
-  <div class="topnav" id="mytopnav">
-    <a href="#logo" class="logo"><h3><span style="color:red">DiGi</span><span style="color:white">Web</span><span style="color:red"> LabS</span></h3></a>
-  <div class="topnav-right" id="mytopnav-right">
-      <a href="#home" class="home">Home</a>
-    <div class="div1"> <a href="" class="dropbtn">Services
-      <i class="fa fa-caret-down"></i>
-    </a>
-     <div class="div2">
-      <a href="#services"><img src="Website-Development.svg" width="28">  Website Developement</a>
-	  <a href="#services"><img src="Digital-Marketing.svg"width="28">  Digital Marketing</a>
-      <a href="#services"><img src="Branding.svg"width="28">  Branding</a>
-      <a href="#services"><img src="Brand-Strategy.svg"width="28">  Brand Consulting</a>
-      <a href="#services"><img src="UI-UX.svg"width="20" height="20">  UI/UX</a>
-      <a href="#services"><img src="Graphics-Design.svg"width="28">  Graphic Design</a>
-	  <a href="#services"><img src="Outdoor-Marketing.svg"width="28">Outdoor Marketing</a>
-	  <a href="#services"><i class="fa fa-calendar-check-o" style="font-size:20px;color:#ffcccc"></i> Event Management Service</a>
-	  <a href="#services"><img src="Website-Development.svg"width="25"> Training</a>
-      <a href="#services"><img src="Photography.svg"width="28"> Photography</a>
-
-     </div>
-    </div>
-      <a href="#meet">About Us</a>
-      
-  <a href="#Contact">Contact Us</a>
-  <a href="tel:+91-9056135266"><i class="fa fa-phone"></i> (91)-9056135266</a></div>
-<!--<a href="javascript:void(0);"target="_blank" class="icon" onclick="myfunction()"><i class="fa fa-bars" ></i></a>-->
-<a href="#"class="icon" onclick="myfunction()"><i class="fa fa-bars" style="color:white"></i></a>
-  </div>
-  <!--vertical navigation bar-->
-  <div class="vertical-menu">
-      <a href="#home">Home</a>
-      <a href="#services" class="active">Services
-      <i class="fa fa-caret-down"></i></a>
-	  <a href="#services"><img src="Website-Development.svg" width="28">  Website Development</a>
-	  <a href="#services"><img src="Digital-Marketing.svg"width="28">  Digital Marketing</a>
-      <a href="#services"><img src="Branding.svg"width="28">  Branding</a>
-      <a href="#services"><img src="Brand-Strategy.svg"width="28">  Brand Consulting</a>
-      <a href="#services"><img src="UI-UX.svg"width="20" height="20">  UI/UX</a>
-      <a href="#services"><img src="Graphics-Design.svg"width="28">  Graphic Design</a>
-	  <a href="#services"><img src="Outdoor-Marketing.svg"width="28">Outdoor Marketing</a>
-	  <a href="#services"><i class="fa fa-calendar-check-o" style="font-size:20px;color:#ffcccc"></i> Event Management Service</a>
-	  <a href="#services"><img src="Website-Development.svg"width="25"> Training</a>
-      <a href="#services"><img src="Photography.svg"width="28"> Photography</a>
-      <a href="#about">About Us</a>
-      <a href="#Contact">Contact Us</a>
-	  <a href="tel:+91-9056135266"><i class="fa fa-phone"></i> (91)-9056135266</a>
-</div>
-<!--<div class="loaderout">
- <div class="loader"></div>
- </div>-->
-  <!-- service slider-->
-  
- <div class="anim w3-content w3-section"style="max-width:100%; overflow:hidden">
- 
- <div class="mySlides w3-animate-right" style="width:100%;">
- <div style="width:50%;float:left;"class="dv"><img src="web-design.png" style="width:100%;height:100%;padding:70px;object-fit:cover"></div>
-  <div style="width:50%;float:left;text-align:left;" class="dv1"><a href="#Website Development"style="text-decoration:none;"> <h1 style="color:white;">Website Development</h1></a></br><p class="pp2">Our website development team designs engaging and professional websites for small and large businesses that meet your specifications.</p>
-  <div class="kontact"style="float:bottom">
-  <a href="#Contact" style="float:left">Contact Now</a>
-  <!-- <a href="#Know More" style="float:left">Know More</a>-->
-  </div>
-  </div>
-  </div>
-  <div class="mySlides w3-animate-right" style="width:100%;">
- <div style="width:50%;float:left;"class="dv"><img src="marketing-digiweb labs.png" style="width:100%;height:100%;padding:70px;object-fit:cover"></div>
-  <div style="width:50%;float:left;text-align:left;"class="dv1"><a href="#Digital Marketing"style="text-decoration:none"> <h1 style="color:white;">Digital Marketing</h1></a></br><p class="pp2">We make sure your brand message is one that will resonate with your target market across digital channels. What information are they looking for? </p>
-  <div class="kontact"style="float:bottom">
-  <a href="#Contact" style="float:left">Contact Now</a>
-  <!-- <a href="#Know More" style="float:left">Know More</a>-->
-  </div>
-  </div>
-  </div>
-  <div class="mySlides w3-animate-right" style="width:100%">
- <div style="width:50%;float:left;"class="dv"><img src="branding.png" style="width:100%;height:100%;padding:70px;object-fit:cover"></div>
-  <div style="width:50%;float:left;text-align:left;"class="dv1"><a href="#services1"style="text-decoration:none"> <h1 style="color:white;">Branding & Identity</h1></a></br><p class="pp2">Our website development team designs engaging and professional websites for small and large businesses that meet your specifications.</p>
-  <div class="kontact"style="float:bottom">
-  <a href="#Contact" style="float:left">Contact Now</a>
-  <!-- <a href="#Know More" style="float:left">Know More</a>-->
-  </div>
-  </div>
-  </div>
-  <div class="mySlides w3-animate-right" style="width:100%">
- <div style="width:50%;float:left;"class="dv"><img src="web-design.png" style="width:100%;height:100%;padding:70px;object-fit:cover"></div>
-  <div style="width:50%;float:left;text-align:left;"class="dv1"><a href="#services1"style="text-decoration:none"> <h1 style="color:white;">Event Management Service</h1></a></br><p class="pp2">Our website development team designs engaging and professional websites for small and large businesses that meet your specifications.</p>
-  <div class="kontact"style="float:bottom">
-  <a href="#Contact" style="float:left">Contact Now</a>
-  <!-- <a href="#Know More" style="float:left">Know More</a>-->
-  </div>
-  </div>
-  </div>
-  
-  <div class="mySlides w3-animate-right" style="width:100%">
- <div style="width:50%;float:left;" class="dv"><img src="web-design.png" style="width:100%;height:100%;padding:70px;object-fit:cover"></div>
-  <div style="width:50%;float:left;text-align:left;" class="dv1"><a href="#services1"style="text-decoration:none"> <h1 style="color:white;">Training</h1></a></br> <p class="pp2">Our website development team designs engaging and professional websites for small and large businesses that meet your specifications.</p>
-  <div class="kontact"style="float:bottom">
-  <a href="#Contact" style="float:left">Contact Now</a>
- <!-- <a href="#Know More" style="float:left">Know More</a>-->
-  </div>
-  </div>
-  </div>
-
-  </div>
-  <!--services description page-->
-  <div class="serviceDescription" id="services"><h1 style="text-align:center;font-family:lato;font-size:54px;font-weight:800;font-style:normal;color:white;">Services</h1>
-   <div class="serviceDescriptionInside1"><p>Customers’ expectations only go up. And when it comes to digital, today’s WOW is tomorrow’s ordinary. That’s why we focus on the future and things that matter: customer needs, sound data, and engaging designs that produce results. At Digiweb LabS, we create digital products and experiences that meet great expectations.</p></div>
-   <div class="serviceDescriptionInside2">
-   <table>
-	<tr>
-	<td rowspan="2"><a href="#services1"><img src="Website-Development.svg" width="35"></a>
-	</td>
-	<td>
-	<a href="" style="color: #00334d;text-decoration:none;font-family:Open Sans;font-size:16px;font-weight:400;font-style:normal"><b>Website Development</b></a>
-	</td>
-	</tr>
-	<tr>
-	<td>
-	We create everything from single page static websites to complex e-commerce websites
-	</td>
-	</tr>
-	<tr>
-	<td rowspan="2"><a href="#services1"><img src="Branding.svg"width="35"></a>
-	</td>
-	<td>
-	<a href="" style="color:#00334d;text-decoration:none;font-family:Open Sans;font-size:16px;font-weight:400;font-style:normal"><b>Branding & Corporate Identity</b></a>
-	</td>
-	</tr>
-	<tr>
-	<td>
-	Whether it is market research, complete brand guideline, or just a logo, we do it all.
-	</td>
-	</tr>
-	<tr>
-	<td rowspan="2"><a href="#services1"><img src="Brand-Strategy.svg"width="35"></a>
-	</td>
-	<td>
-	<a href="" style="color:#00334d;text-decoration:none;font-family:Open Sans;font-size:16px;font-weight:400;font-style:normal"><b>Brand Consulting</b></a>
-	</td>
-	</tr>
-	<tr>
-	<td>
-	With the help of our proprietary frameworks, we help you in creating a successful brand.
-	</td>
-	</tr>
-	<tr>
-	<td rowspan="2"><a href="#services1"><img src="Graphics-Design.svg"width="35"></a>
-	</td>
-	<td>
-	<a href="" style="color:#00334d;text-decoration:none;font-family:Open Sans;font-size:16px;font-weight:400;font-style:normal"><b>Graphic Design</b></a>
-	</td>
-	</tr>
-	<tr>
-	<td>
-We help create engaging design collateral like flyers, brochures, posters and more
-	</td>
-	</tr>
-	<td rowspan="2"><a href="#services1"><img src="Website-Development.svg"width="35"></a>
-	</td>
-	<td>
-	<a href="" style="color:#00334d;text-decoration:none;font-family:Open Sans;font-size:16px;font-weight:400;font-style:normal"><b>Training</b></a>
-	</td>
-	</tr>
-	<tr>
-	<td>
-We help create engaging design collateral like flyers, brochures, posters and more
-	</td>
-	</tr>
-	</table>
-      </div>
-   <div class="serviceDescriptionInside3">
-    <table>
-	<tr>
-	<td rowspan="2"><a href="#services1"><img src="Digital-Marketing.svg"width="35"></a>
-	</td>
-	<td>
-	<a href="" style="color:#00334d;text-decoration:none;font-family:Open Sans;font-size:16px;font-weight:400;font-style:normal"><b>Digital Marketing</b></a>
-	</td>
-	</tr>
-	<tr>
-	<td>
-	We are big on content and have expertise in contemporary techniques like SEO/SMO etc
-	</td>
-	</tr>
-	<tr>
-	<td rowspan="2"> <a href="#services1"><img src="UI-UX.svg"width="35"></a>
-	</td>
-	<td>
-	<a href="" style="color:#00334d;text-decoration:none;font-family:Open Sans;font-size:16px;font-weight:400;font-style:normal"><b>UI/UX</b></a>
-	</td>
-	</tr>
-	<tr>
-	<td>
-	Whether it is market research, complete brand guideline, or just a logo, we do it all.
-	</td>
-	</tr>
-	<tr>
-	<td rowspan="2"><a href="#services1"><img src="Outdoor-Marketing.svg"width="35"></a>
-	</td>
-	<td>
-	<a href="" style="color:#00334d;text-decoration:none;font-family:Open Sans;font-size:16px;font-weight:400;font-style:normal"><b>Outdoor Marketing</b></a>
-	</td>
-	</tr>
-	<tr>
-	<td>
-    Present in 140 cities, we provide a plethora of media formats to advertise your brand
-	</td>
-	</tr>
-	<tr>
-	<td rowspan="2"><a href="#services1"><i class="fa fa-calendar-check-o" style="font-size:30px;color:#ffcccc"></i></a>
-	</td>
-	<td>
-	<a href="" style="color:#00334d;text-decoration:none;font-family:Open Sans;font-size:16px;font-weight:400;font-style:normal"><b>Event Management Service</b></a>
-	</td>
-	</tr>
-	<tr>
-	<td>
-	Present in 140 cities, we provide a plethora of media formats to advertise your brand
-	</td>
-	</tr>
-	<td rowspan="2"><a href="#services1"><img src="Photography.svg"width="35"></a>
-	</td>
-	<td>
-	<a href="" style="color:#00334d;text-decoration:none;font-family:Open Sans;font-size:16px;font-weight:400;font-style:normal"><b>Photography</b>
-	</td>
-	</tr>
-	<tr>
-	<td>
-	We specialize in e-commerce, product, real estate and in-store photography
-	</td>
-	</tr>
-	</table>
-</div>
-  </div>
-  <!--- Testimonial-->
-  <div class="testyout">
-<h2 style="text-align:center;font-family:lato;font-size:54px;font-weight:800;font-style:normal;color:white;">Testimonials</h2>
-
-<div class="testy" id="d1"style="display:none">
-  <img src="YRYHY.jpg" alt="Avatar" style="width:120px">
-  <p><span style="font-family:lato;font-size:16px;font-weight:700;font-style:normal;color:white;">Hukmaram Bishnoi</span></br></br><p class="pp2">CEO & Founder, Digiweb Labs.</p></p></br>
-  <p class="pp1">Working with Hukmaram is a pleasure. He always goes the extra mile to deliver over and above the brief. The Digweb Labs team is responsive, reliable and proactive.</p>
-</div>
-
-<div class="testy" id="d2" style="display:none">
-  <img src="YRYHY.jpg" alt="Avatar" style="width:120px">
-  <p><span style="font-family:lato;font-size:16px;font-weight:700;font-style:normal;color:white;">Hukmaram</span></br></br><p class="pp2">CEO & Founder, Digiweb Labs.</p></p></br>
-  <p class="pp1">Working with Hukmaram is a pleasure. He always goes the extra mile to deliver over and above the brief. The Digweb Labs team is responsive, reliable and proactive.</p>
-</div>
-
-<div class="testy" id="d3" style="display:block">
-  <img src="YRYHY.jpg" alt="Avatar" style="width:120px">
-  <p><span style="font-family:lato;font-size:16px;font-weight:700;font-style:normal;color:white;">Bishnoi</span></br></br><p class="pp2">CEO & Founder, Digiweb Labs.</p></p></br>
-  <p class="pp1">Working with Hukmaram is a pleasure. He always goes the extra mile to deliver over and above the brief. The Digweb Labs team is responsive, reliable and proactive.</p>
-</div>
-</div>
-
-<!--
-<table class="social">
-<tr>
-<td class="s1"><a href="#" class="fa fa-facebook" id="s"></a></td>
-<td class="s1"><a href="#" class="fa fa-twitter" id="s"></a></td>
-<td class="s1"><a href="#" class="fa fa-google" id="s"></a></td>
-<td class="s1"><a href="#" class="fa fa-linkedin" id="s"></a></td>
-<td class="s1"><a href="#" class="fa fa-youtube" id="s"></a></td>
-<td class="s1"><a href="#" class="fa fa-instagram" id="s"></a></td>
-<td class="s1"><a href="#" class="fa fa-pinterest" id="s"></a></td>
-</tr>
-</table>
--->
-<div class="aboutdiv" id="meet">
-<h1 style="text-align:center;font-family:lato;font-size:54px;font-weight:800;font-style:normal;color:white;">About Us</h1>
-<h3 style="text-align:center;font-family:Open Sans;font-size:18px;font-weight:500;font-style:normal;color:white;">Our Strategy</h3>
-  <div class="column1">
-  <div class="strategy" style="background:#ffa366"><i class="fa fa-file-text-o" style="font-size:48px;color:white"></i></div>
-<div class="strategy" style="background:#ff6666"><i class="fa fa-code" style="font-size:48px;color:white"></i></div>
-<div class="strategy1" style="background:white"><b>Requirement</b></div>
-<div class="strategy1" style="background:white"><b>Development</b></div>
-</div>
-<div class="column2">
- <div class="strategy" style="background:#66c2ff"><i class="fa fa-times-rectangle-o" style="font-size:48px;color:white"></i></div>
-<div class="strategy" style="background:#b300b3"><i class="fa fa-headphones" style="font-size:48px;color:white"></i></div>
-<div class="strategy1" style="background:white"><b>Delivery</b></div>
-<div class="strategy1" style="background:white"><b>24/7 Support</b></div>
-</div>
-  </div>
-  
-  <div class="aboutdiv1" id="meet">
-<h3 style="text-align:center;font-family:Open Sans;font-size:18px;font-weight:500;font-style:normal;color:white;">Our Skills</h3>
-  <div class="column3">
-  <p style="margin-left:10px;">Creative UI/UX</p>
-<div class="containerr">
-  <div class="skills UI">95%</div>
-</div>
-
-<p style="margin-left:10px;">Responsive Design</p>
-<div class="containerr">
-  <div class="skills design">92%</div>
-</div>
-
-<p style="margin-left:10px;">Application Development</p>
-<div class="containerr">
-  <div class="skills development">98%</div>
-</div>
-
-</div>
-<div class="column4">
- <p style="margin-left:10px;">Online Marketing</p>
-<div class="containerr">
-  <div class="skills marketing">80%</div>
-</div>
-
-<p style="margin-left:10px;">Branding</p>
-<div class="containerr">
-  <div class="skills branding">88%</div>
-</div>
-
-<p style="margin-left:10px;">Event Management Service</p>
-<div class="containerr">
-  <div class="skills event">95%</div>
-</div>
-
-</div>
-  </div>
-  
-  <!--Get in touch with-->
-<div class="touchout" id="Contact">
-<h1 style="text-align:center;font-family:lato;font-size:54px;font-weight:800;font-style:normal;color:white;">Get in touch with us</h1>
-<p style="text-align:center">Have questions? Want to discuss a project? Drop your contact details and we'll get in touch</p>
-<!--<div style="display:none;text-align:center" class="thanks">
-<h2 style="color:red">Thanks for contacting us!
-We will get back to you soon</h2>
-</div>-->
-<div class="touchin1">
-<ul>
-                 	<li>
-                      <i class="fa fa-map-marker" style="color:white;font-size:50px;"></i>
-                      <h6 style="color:#c2d6d6;">ADDRESS</h6>
-                      <p class="pp1">D-167, Ground Floor, <br>Sector 49, Noida - 201301, India<br></p>      
-                    </li>
-                    <li>
-                      <i class="fa fa-mobile" style="color:white;font-size:50px;"></i>
-                      <h6 style="color:#c2d6d6;">PHONE</h6>
-                      <p class="pp1">+91-9056135266</p>
-                      <p>&nbsp;</p>      
-                    </li>
-                    <li>
-                      <i class="fa fa-envelope-o" style="color:white;font-size:50px;"></i>
-                      <h6 style="color:#c2d6d6;">EMAIL</h6>
-                      <p class="pp1"><a href="mailto:design@dgweblabs.in" style="text-decoration:none">design@dgweblabs.in</a></p>      
-                    </li>
-                 </ul>
-
-</div>
-<div class="touchin2">
-<ul>
-<form action="https://script.google.com/macros/s/AKfycbykTLnyn0bV4vsV2C4rwgLpiOWWbDQNbdSaewoxBg/exec" class="gform" method="post" ng-app="myApp"  ng-controller="validateCtrl" name="myForm" novalidate>
-
-<li class="fieldli"><p>
- <input type="text" name="name" ng-model="name" placeholder="Name" style="padding-left:14px;color:#00334d;" required>
-  <span style="color:red" ng-show="myForm.name.$dirty && myForm.name.$invalid">
-  <span ng-show="myForm.name.$error.required">Username is required.</span>
-  </span>
-</p>
+<nav class="navbar navbar-expand-md fixed-top back" id="navigationbackground" style="z-index: 1000;font-family: 'Roboto Condensed', sans-serif; text-transform: uppercase;letter-spacing: 3px; font-size: 11px;">
+<a class="navbar-brand" href="#" style="color:white">Digiweb Labs</a>
+<button class="navbar-toggler text-dark" style="outline:#00111a" type="button" data-toggle="collapse" data-target="#bary">
+<i class="fa fa-bars" style="color:white;"></i>
+</button>
+<div class="collapse navbar-collapse" id="bary">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="#"style="color:white;font-weight:800">Home</a>
 </li>
-<li class="fieldli"><p>
-  <input type="email" name="email" ng-model="email" placeholder="Email" style="padding-left:14px;color:#00334d;"required>
-  <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
-  <span ng-show="myForm.email.$error.required">Email is required.</span>
-  <span ng-show="myForm.email.$error.email">Invalid email address.</span>
-  </span>
-</p>
+<li class="nav-item">
+<a class="nav-link" href="#"style="color:white;font-weight:800">Services</a>
 </li>
-<li class="fieldli"><p>
-<select style="padding-left:14px;color:#00334d;" name="service interested in">
-<option selected="true" disabled="disabled">Service interested in</option>
+<li class="nav-item">
+<a class="nav-link" href="#"style="color:white;font-weight:800">About</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#"style="color:white;font-weight:800">Blog</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#"style="color:white;font-weight:800">Contact</a>
+</li>
+<li class="nav-item">
+<a href="tel:+91-9056135266" class="nav-link" style="color:white;font-weight:800"><i class="fa fa-phone"></i> (+91)-9056135266</a>
+</li>
+</ul>
+</div>
+</nav>
+ <div class="container-fluid" id="home">
+ <div id="headsection"><!--<h5 class="text-center">DO YOU NEED A WEBSITE ?</h5></br>--><h2 class="text-center"><strong>Digiweb Labs specializing in</strong></h2><h2 class="text-center" id="typewriter"></h2></br></br>
+<a href="#" class="mx-auto p-2" id="contact_button">Contact Us</a>
+ </div> 
+</div>
+
+<div class="container-fluid mt-4">
+<h5 class="text-center"> Our Services</h5>
+<div class="row">
+<div class="col-sm-3"><div class="p-2 my-3 shadow-sm bg-white" id="b1"><div class="text-center">
+    <img src="Website-Development.svg" id="img1"/></div><h6 class="text-center">Web Development</h6>
+    <div class="text-left p-2 border border-top-0 d-flex" style="background-color:#eee">
+        We create everything from single page static websites to complex e-commerce websites
+        </div>
+         <!--<div class="text-left p-2 border border-top-0 d-flex" style="background-color:#eee">
+        Field: Electronics & Communication
+        </div>
+        <div class="text-left p-2 border border-top-0 d-flex" style="background-color:#eee">
+        Experience: 13 Years
+        </div>-->
+<div class="text-left p-2 border border-top-0 rounded-bottom d-flex" style="background-color:#eee">
+    <div class="p-2"><a href="#"><i class="fa fa-twitter-square"style="color:#00334d"></i></a></div>
+    <div class="p-2"><a href="#"><i class="fa fa-linkedin-square"style="color:#00334d"></i></a></div>
+	<div class="p-2"><a href="#"><i class="fa fa-facebook-square"style="color:#00334d"></i></a></div>
+	
+	</div>
+
+</div></div>
+<div class="col-sm-3"><div class="p-2 my-3 shadow-sm bg-white" id="b1"><div class="text-center">
+    <img src="Digital-Marketing.svg" id="img1"/></div><h6 class="text-center">Digital Marketing</h6>
+    <div class="text-left p-2 border border-top-0 d-flex" style="background-color:#eee">
+        We are big on content and have expertise in contemporary techniques like SEO/SMO etc
+        </div>
+       <!--  <div class="text-left p-2 border border-top-0 d-flex" style="background-color:#eee">
+        Field: Electronics & Communication
+        </div>
+        <div class="text-left p-2 border border-top-0 d-flex" style="background-color:#eee">
+        Experience: 13 Years
+        </div>-->
+<div class="text-left p-2 border border-top-0 rounded-bottom d-flex" style="background-color:#eee">
+    <div class="p-2"><a href="#"><i class="fa fa-twitter-square"style="color:#00334d"></i></a></div>
+    <div class="p-2"><a href="#"><i class="fa fa-linkedin-square"style="color:#00334d"></i></a></div>
+	<div class="p-2"><a href="#"><i class="fa fa-facebook-square"style="color:#00334d"></i></a></div>
+	
+	</div>
+
+</div></div>
+<div class="col-sm-3"><div class="p-2 my-3 shadow-sm bg-white" id="b1"><div class="text-center">
+    <img src="UI-UX.svg" id="img1"/></div><h6 class="text-center">UI/UX</h6>
+    <div class="text-left p-2 border border-top-0 d-flex" style="background-color:#eee">
+        We help our clients convert their ideas into user experiences that drive engagement and increase conversion.
+        </div>
+       <!--  <div class="text-left p-2 border border-top-0 d-flex" style="background-color:#eee">
+        Field: Electronics & Communication
+        </div>
+        <div class="text-left p-2 border border-top-0 d-flex" style="background-color:#eee">
+        Experience: 13 Years
+        </div>-->
+<div class="text-left p-2 border border-top-0 rounded-bottom d-flex" style="background-color:#eee">
+    <div class="p-2"><a href="#"><i class="fa fa-twitter-square"style="color:#00334d"></i></a></div>
+    <div class="p-2"><a href="#"><i class="fa fa-linkedin-square"style="color:#00334d"></i></a></div>
+	<div class="p-2"><a href="#"><i class="fa fa-facebook-square"style="color:#00334d"></i></a></div>
+	
+	</div>
+
+</div></div>
+<div class="col-sm-3"><div class="p-2 my-3 shadow-sm bg-white" id="b1"><div class="text-center">
+    <img src="Branding.svg" id="img1"/></div><h6 class="text-center">Branding & Corporate Identity</h6>
+    <div class="text-left p-2 border border-top-0 d-flex" style="background-color:#eee">
+        With the help of our proprietary frameworks, we help you in creating a successful brand.
+        </div>
+       <!--  <div class="text-left p-2 border border-top-0 d-flex" style="background-color:#eee">
+        Field: Electronics & Communication
+        </div>
+        <div class="text-left p-2 border border-top-0 d-flex" style="background-color:#eee">
+        Experience: 13 Years
+        </div>-->
+<div class="text-left p-2 border border-top-0 rounded-bottom d-flex" style="background-color:#eee">
+    <div class="p-2"><a href="#"><i class="fa fa-twitter-square"style="color:#00334d"></i></a></div>
+    <div class="p-2"><a href="#"><i class="fa fa-linkedin-square"style="color:#00334d"></i></a></div>
+	<div class="p-2"><a href="#"><i class="fa fa-facebook-square"style="color:#00334d"></i></a></div>
+	
+	</div>
+
+</div></div>
+
+</div>
+<div class="row">
+<div class="col-sm-3"><div class="p-2 my-3 shadow-sm bg-white" id="b1"><div class="text-center">
+    <img src="Outdoor-Marketing.svg" id="img1"/></div><h6 class="text-center">Outdoor Marketing</h6>
+    <div class="text-left p-2 border border-top-0 d-flex" style="background-color:#eee">
+       Present in 140 cities, we provide a plethora of media formats to advertise your brand.
+        </div>
+        <!-- <div class="text-left p-2 border border-top-0 d-flex" style="background-color:#eee">
+        Field: Electronics & Communication
+        </div>
+        <div class="text-left p-2 border border-top-0 d-flex" style="background-color:#eee">
+        Experience: 13 Years
+        </div>-->
+<div class="text-left p-2 border border-top-0 rounded-bottom d-flex" style="background-color:#eee">
+    <div class="p-2"><a href="#"><i class="fa fa-twitter-square"style="color:#00334d"></i></a></div>
+    <div class="p-2"><a href="#"><i class="fa fa-linkedin-square"style="color:#00334d"></i></a></div>
+	<div class="p-2"><a href="#"><i class="fa fa-facebook-square"style="color:#00334d"></i></a></div>
+	
+	</div>
+
+</div></div>
+<div class="col-sm-3"><div class="p-2 my-3 shadow-sm bg-white" id="b1"><div class="text-center p-2">
+    <i class="fa fa-calendar-check-o" style="font-size:45px;color:#ffcccc" id="img1"></i></div><h6 class="text-center">Event Management Service</h6>
+    <div class="text-left p-2 border border-top-0 d-flex" style="background-color:#eee">
+        We provide event management & coordination, theming, décor & styling, exhibitions.
+        </div>
+        <!-- <div class="text-left p-2 border border-top-0 d-flex" style="background-color:#eee">
+        Field: Electronics & Communication
+        </div>
+        <div class="text-left p-2 border border-top-0 d-flex" style="background-color:#eee">
+        Experience: 13 Years
+        </div>-->
+<div class="text-left p-2 border border-top-0 rounded-bottom d-flex" style="background-color:#eee">
+    <div class="p-2"><a href="#"><i class="fa fa-twitter-square"style="color:#00334d"></i></a></div>
+    <div class="p-2"><a href="#"><i class="fa fa-linkedin-square"style="color:#00334d"></i></a></div>
+	<div class="p-2"><a href="#"><i class="fa fa-facebook-square"style="color:#00334d"></i></a></div>
+	
+	</div>
+
+</div></div>
+<div class="col-sm-3"><div class="p-2 my-3 shadow-sm bg-white" id="b1"><div class="text-center">
+    <img src="Graphics-Design.svg" id="img1"/></div><h6 class="text-center">Graphic Design</h6>
+    <div class="text-left p-2 border border-top-0 d-flex" style="background-color:#eee">
+        We help create engaging design collateral like flyers, brochures, posters and more.
+        </div>
+        <!-- <div class="text-left p-2 border border-top-0 d-flex" style="background-color:#eee">
+        Field: Electronics & Communication
+        </div>
+        <div class="text-left p-2 border border-top-0 d-flex" style="background-color:#eee">
+        Experience: 13 Years
+        </div>-->
+<div class="text-left p-2 border border-top-0 rounded-bottom d-flex" style="background-color:#eee">
+    <div class="p-2"><a href="#"><i class="fa fa-twitter-square"style="color:#00334d"></i></a></div>
+    <div class="p-2"><a href="#"><i class="fa fa-linkedin-square"style="color:#00334d"></i></a></div>
+	<div class="p-2"><a href="#"><i class="fa fa-facebook-square"style="color:#00334d"></i></a></div>
+	
+	</div>
+
+</div></div>
+<div class="col-sm-3"><div class="p-2 my-3 shadow-sm bg-white" id="b1"><div class="text-center p-2">
+    <i class="fa fa-graduation-cap" style="font-size:45px;color:#ffcccc" id="img1"></i></div><h6 class="text-center">Corporate Training</h6>
+    <div class="text-left p-2 border border-top-0 d-flex" style="background-color:#eee">
+        We Provide training in Web Development, Web & Graphic Design, Digital Marketing, and Data Science
+        </div>
+       <!--  <div class="text-left p-2 border border-top-0 d-flex" style="background-color:#eee">
+        Field: Electronics & Communication
+        </div>
+        <div class="text-left p-2 border border-top-0 d-flex" style="background-color:#eee">
+        Experience: 13 Years
+        </div>-->
+<div class="text-left p-2 border border-top-0 rounded-bottom d-flex" style="background-color:#eee">
+    <div class="p-2"><a href="#"><i class="fa fa-twitter-square"style="color:#00334d"></i></a></div>
+    <div class="p-2"><a href="#"><i class="fa fa-linkedin-square"style="color:#00334d"></i></a></div>
+	<div class="p-2"><a href="#"><i class="fa fa-facebook-square"style="color:#00334d"></i></a></div>
+	
+	</div>
+
+</div></div>
+
+</div>
+</div>
+<div class="container-fluid" style="background-color:#00334d">
+</br>
+<h5 class="text-center" style="color:white">Our Strategy</h5>
+<div class="row">
+<div class="col-sm-3"><div class="text-center my-4"><i class="fa fa-file-text-o" style="font-size:48px;color:white"></i></br></br><span style="color:white">Research & Planning</span></div></div>
+<div class="col-sm-3"><div class="text-center my-4"><i class="fa fa-code" style="font-size:48px;color:white"></i></br></br><span style="color:white">Product Development</span></div></div>
+<div class="col-sm-3"><div class="text-center my-4"><i class="fa fa-rocket" style="font-size:48px;color:white"></i></br></br><span style="color:white">Launch & Sustenance</span></div></div>
+<div class="col-sm-3"><div class="text-center my-4"><i class="fa fa-headphones" style="font-size:48px;color:white"></i></br></br><span style="color:white">24/7 Support</span></div></div>
+</div>
+</div>
+
+<div class="container-fluid my-4">
+</br>
+<h5 class="text-center">Our Current Clients</h5>
+<div class="row">
+<!--<div class="col-sm-3"><div class="text-center py-4 my-2" style="border-top:1px solid #00334d;border-right:1px solid #00334d;border-bottom:1px solid blue;border-left:1px solid blue;"><h5><span style="color:#00334d;">Har</span><span class="text-danger">tron</span> <span style="color:#00334d;">Kait</span><span class="text-danger">hal</span></h5></div></div>-->
+<div class="col-sm-3"><a href="#" style="text-decoration:none"><div class="text-center py-4 border my-2" id="client"><h5><span id="clienttext1">Har</span><span id="clienttext2">tron</span> <span id="clienttext3">Kait</span><span id="clienttext4">hal</span></h5></div></a></div>
+<div class="col-sm-3"><a href="#" style="text-decoration:none"><div class="text-center py-4 border my-2" id="client"><h5><span id="clienttext2">Ide</span><span id="clienttext1">al</span> <span id="clienttext4">Insti</span><span  id="clienttext3">tute</span></h5></div></a></div>
+<div class="col-sm-3"><a href="#" style="text-decoration:none"><div class="text-center py-4 border my-2" id="client"><h5><span id="clienttext1">Vina</span><span id="clienttext2">yak</span> <span id="clienttext3">Engi</span><span id="clienttext4">neers</span></h5></div></a></div>
+<div class="col-sm-3"><a href="#" style="text-decoration:none"><div class="text-center py-4 border my-2" id="client"><h5><span id="clienttext2">Comi</span><span id="clienttext1">ng</span> <span id="clienttext4">So</span><span id="clienttext3">on</span></h5></div></a></div>
+</div>
+</br>
+</div>
+<div class="container-fluid mt-4" style="background-color:#00334d">
+</br>
+<h5 class="text-center" style="color:white">Get In Touch With Us</h5>
+<div class="row">
+<div class="col-sm-4"><div class="text-center my-4 p-4"><i class="fa fa-map-marker" style="color:white;font-size:50px;"></i></br></br><span style="color:white">Address</span></br><span style="color:white">D-167, Ground Floor, 
+Sector 49, Noida - 201301, India</span></div></div>
+<div class="col-sm-4">
+<div class="text-center my-4 p-4"><i class="fa fa-mobile" style="color:white;font-size:50px;"></i></br></br><span style="color:white">Phone</span></br><span style="color:white"><a href="tel:9056135266" style="text-decoration:none;color:white;">+91-9056135266</a></span></div>
+</div>
+<div class="col-sm-4">
+<div class="text-center my-4 p-4"><i class="fa fa-envelope-o" style="color:white;font-size:50px;"></i></br></br><span style="color:white">Email</span></br><span style="color:white"><a href="mailto:design@dgweblabs.in" style="text-decoration:none;color:white;">design@dgweblabs.in</a></span></div>
+</div>
+</div>
+<div class="container py-4">
+<form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwwOwyYx77QKkB5xfo9gfPFHWwKn6-2gWMUlJs/exec">
+<div class="form-group mx-auto" style="width:80%;">
+<input class="form-control" type="text" name="name" id="name" placeholder="Name"/>
+<input class="form-control mt-3" type="email" name="email" id="email" placeholder="Email"/>
+<input class="form-control mt-3" type="text" name="phone" id="phone" placeholder="Phone"/>
+<select class="form-control mt-3" name="services" id="services">
+<option selected >Services</option>
 <option value="Web Development">Web Development</option>
 <option value="Digital Marketing">Digital Marketing</option>
-<option value="Branding">Branding</option>
-<option value="Brand Consulting">Brand Consulting</option>
+<option value="Branding & Corporate Identity">Branding & Corporate Identity</option>
 <option value="UI/UX">UI/UX</option>
 <option value="Graphic Design">Graphic Design</option>
 <option value="Outdoor Marketing">Outdoor Marketing</option>
 <option value="Event Management Service">Event Management Service</option>
-<option value="Training">Training</option>
-<option value="Photography">Photography</option>
+<option value="Corporate Training">Corporate Training</option>
 </select>
-</p>
-</li>
-<li class="fieldli"><p>
-  <input type="number" name="phone" ng-model="phone" ng-minlength="10" ng-maxlength="12" placeholder="Phone" style="padding-left:14px;color:#00334d;"required>
-  <span style="color:red" ng-show="myForm.phone.$dirty && myForm.phone.$invalid">
-  <span ng-show="myForm.phone.$error.required">Number is required.</span>
-  <span ng-show="myForm.phone.$error.number">Invalid phone number.</span>
-  <span ng-show="myForm.phone.$error.minlength">Phone number is too short</span>
-  <span ng-show="myForm.phone.$error.maxlength">Phone number is too large</span>
-  </span>
-</p>
-</li>
-<li class="fieldli1"><p>
-<textarea placeholder="Message" style="padding-left:14px;color:#00334d;" name="message" required></textarea></p>
-</li>
-<li class="fieldli">
-<p>
-  <input type="submit"ng-disabled="myForm.user.$dirty && myForm.user.$invalid || myForm.email.$dirty && myForm.email.$invalid"/>
-</p>
-</li>
-
-</form>
-</ul>
-<script>
-var app = angular.module('myApp', []);
-app.controller('validateCtrl', function($scope) {
-    $scope.user = '';
-    $scope.email = '';
-});
-</script></div>
+<textarea class="form-control mt-3" rows="4" name="message" id="message" placeholder="Message"></textarea>
+<button class="btn mt-3" type="submit" style="background-color:white">Submit</button>
 </div>
-  
-  
-  
-<div class="copyright">All Right Reserved &copy; 2018 Digiweb Labs </div>
-
-<script>
-var myIndex = 0;
-carousel();
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-
-    setTimeout(carousel, 6000);    
-}
-</script>
+<div class="thankyou_message" style="display:none;">
+      <h6 class="text-center" style="color:red"><em>Thanks</em> for contacting us!
+        We will get back to you soon!</h6>
+    </div>
+</form>
+<script data-cfasync="false" src="form-submission-handler.js"></script>
+</div>
+</div>
+<div class="container-fluid text-center py-4" style="background-color:#00111a;color:white">
+<span>All Right Reserved &copy; 2018 Digiweb Labs | Developed By Hukmaram Bishnoi</span>
+</div>
+<script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
+  <script type="text/javascript">
+    const instance = new Typewriter('#typewriter', {
+      strings: ['<strong>Web Developement</strong>', '<strong>Web Design</strong>', '<strong>Digital Marketing</strong>', '<strong>UI/UX</strong>', '<strong>Branding & Corporate Identity</strong>', '<strong>Outdoor Marketing</strong>', '<strong>Event Management Service</strong>', '<strong>Graphic Design</strong>', '<strong>Corporate Training</strong>'],
+      autoStart: true,
+      loop: true,
+    });
+  </script>
 </body>
 </html>
